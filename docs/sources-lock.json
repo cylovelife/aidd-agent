@@ -1,0 +1,12 @@
+{
+  "dataset": {
+    "repo_id": "openadmet/cyp-challenge-train-test",
+    "revision": "d7eb3c973dca01aad8e33c91c29e5123fd925d8f",
+    "files": ["README.md", "cyp-challenge-TRAIN_inhibition.csv", "cyp-challenge-TEST-BLINDED.csv"]
+  },
+  "tutorial": {
+    "url": "https://github.com/OpenADMET/CYP-Challenge-Tutorial",
+    "revision": "832ae6d6447b07c2c71059de34d07f1130388247",
+    "vendored_files": ["evaluation/custom_scoring_functions.py", "validation/activity_validation.py", "LICENSE"]
+  }
+}

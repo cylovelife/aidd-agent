@@ -1,0 +1,25 @@
+{
+  "repo_id": "openadmet/cyp-challenge-train-test",
+  "revision": "d7eb3c973dca01aad8e33c91c29e5123fd925d8f",
+  "downloaded_at": "2026-10-28T11:09:02.531582+00:00",
+  "files": [
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test/resolve/d7eb3c973dca01aad8e33c91c29e5123fd925d8f/README.md",
+      "sha256": "fb4197a76247fee6213b0a8d529ebfda9f9f7db4793cb2ca0cb314ba0d294219",
+      "bytes": 5037
+    },
+    {
+      "name": "cyp-challenge-TRAIN_inhibition.csv",
+      "url": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test/resolve/d7eb3c973dca01aad8e33c91c29e5123fd925d8f/cyp-challenge-TRAIN_inhibition.csv",
+      "sha256": "b8f79addd266fb6f9f4c222c5e4e73d926362328b6a8d2841871a54e46bd2278",
+      "bytes": 653407
+    },
+    {
+      "name": "cyp-challenge-TEST-BLINDED.csv",
+      "url": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test/resolve/d7eb3c973dca01aad8e33c91c29e5123fd925d8f/cyp-challenge-TEST-BLINDED.csv",
+      "sha256": "a342f8444a8dcb531ca12f3685293f0bd6c36ae9073f491e44a9bc1cc4b741f9",
+      "bytes": 44935
+    }
+  ]
+}

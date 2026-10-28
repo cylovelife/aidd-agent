@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aidd-agent"
+version = "0.1.0"
+description = "Reproducible personal AIDD competition experiments"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "httpx>=0.27,<1",
+  "numpy>=2,<3",
+  "pandas>=2.2,<3",
+  "rdkit>=2024.9,<2027",
+  "scikit-learn>=1.5,<2",
+  "scipy>=1.14,<2",
+]
+
+[dependency-groups]
+dev = ["mypy>=1.14,<2", "pandas-stubs>=2.2,<3", "pytest>=8,<10", "ruff>=0.9,<1"]
+submission = ["gradio-client>=1.8,<3"]
+
+[project.scripts]
+aidd = "aidd_agent.cli:main"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = ["state", "src/aidd_agent/vendor"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.mypy]
+python_version = "3.12"
+files = ["src/aidd_agent"]
+exclude = ["src/aidd_agent/vendor/"]
+ignore_missing_imports = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+follow_imports = "silent"

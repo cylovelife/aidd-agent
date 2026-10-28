@@ -1,0 +1,9 @@
+These files are copied without modification from OpenADMET/CYP-Challenge-Tutorial,
+commit 832ae6d6447b07c2c71059de34d07f1130388247:
+- evaluation/custom_scoring_functions.py
+- validation/activity_validation.py
+- LICENSE
+Source: https://github.com/OpenADMET/CYP-Challenge-Tutorial
+Licensed under Apache License 2.0; retain LICENSE and upstream authorship.
+Original authors are identified in upstream metadata (including Maria Castellanos).
+Handwritten project wrappers are separate from this unmodified third-party code.
