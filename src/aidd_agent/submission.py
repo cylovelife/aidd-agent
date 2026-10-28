@@ -3,6 +3,7 @@
 @author cylovelife
 """
 
+import json
 import re
 from datetime import UTC, datetime
 from pathlib import Path
@@ -110,3 +111,58 @@ def submit_once(
     }
     write_json(receipt_dir / "receipt.json", receipt)
     return receipt
+
+
+def match_scored_entry(
+    frame: pd.DataFrame, alias: str, method_url: str
+) -> dict[str, object] | None:
+    required = {"Username", "Model Report Link", "Rank", "MA-ST-RAE", "Submitted"}
+    if frame.empty or not required.issubset(frame.columns):
+        raise ValueError("Official leaderboard is empty or has an unexpected schema")
+    matching = frame.loc[frame["Username"].eq(alias) & frame["Model Report Link"].eq(method_url)]
+    if matching.empty:
+        return None
+    if len(matching) != 1:
+        raise ValueError("Ambiguous leaderboard identity: multiple matching entries")
+    row = matching.iloc[0]
+    score = float(row["MA-ST-RAE"])
+    rank = int(row["Rank"])
+    if not 0 <= score < float("inf") or rank < 1:
+        raise ValueError("Invalid official score or rank")
+    return {
+        "rank": rank,
+        "leaderboard_entries": len(frame),
+        "ma_st_rae": score,
+        "submitted": str(row["Submitted"]),
+        "alias": alias,
+        "method_url": method_url,
+        "leaderboard_scope": "live public regression leaderboard, not final ranking",
+    }
+
+
+def check_leaderboard(receipt_dir: Path) -> dict[str, object]:
+    from gradio_client import Client
+
+    with (receipt_dir / "receipt.json").open() as stream:
+        receipt = json.load(stream)
+    client = Client(
+        "https://openadmet-cyp-challenge.hf.space",
+        verbose=False,
+        analytics_enabled=False,
+        httpx_kwargs={"timeout": 60.0},
+        download_files=str(receipt_dir / "leaderboard-downloads"),
+    )
+    path = client.submit(api_name="/partial").result(timeout=90)
+    if not isinstance(path, str):
+        raise ValueError("Unexpected official leaderboard download response")
+    entry = match_scored_entry(pd.read_csv(path), receipt["alias"], receipt["method_url"])
+    now = datetime.now(UTC)
+    result: dict[str, object] = {
+        "checked_at": now.isoformat(),
+        "status": "scored" if entry is not None else "not_yet_on_leaderboard",
+        "entry": entry,
+        "leaderboard_file": path,
+        "leaderboard_sha256": sha256_file(Path(path)),
+    }
+    write_json(receipt_dir / f"leaderboard-{now.strftime('%Y%m%dT%H%M%S%fZ')}.json", result)
+    return result

@@ -17,7 +17,7 @@
 
 ## Verification and recovery
 
-- Planned commands, to become executable with the initial package: `uv sync --frozen`, `uv run pytest`, `uv run ruff check .`, `uv run ruff format --check .`, `uv run mypy src/aidd_agent`.
+- Verified commands: `uv sync --frozen`, `uv run pytest`, `uv run ruff check .`, `uv run ruff format --check .`, `uv run mypy src/aidd_agent`. The optional submission SDK uses `uv sync --frozen --group submission`.
 - Tests cover input/schema failures, molecule split isolation, official metric semantics and submission identity/finite-value validation. Unit tests do not access the network.
 - Each run gets a fresh output directory. Failures retain diagnostic evidence; do not overwrite raw inputs or the last valid submission. Rerunning preparation must verify existing hashes.
 - GitHub synchronization is authorized; commits use the verified personal GitHub identity. External submission uses the user's actual HF identity and the reviewed method report.

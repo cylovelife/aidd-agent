@@ -35,6 +35,10 @@ def main() -> None:
     submit.add_argument("--username", required=True)
     submit.add_argument("--method-url", required=True)
     submit.add_argument("--sha256", required=True)
+    check = commands.add_parser(
+        "check", help="Read official score for an existing receipt; no upload"
+    )
+    check.add_argument("--receipt-dir", type=Path, required=True)
     args = parser.parse_args()
     if args.command == "fetch":
         result = download_data(args.data_dir)
@@ -51,6 +55,10 @@ def main() -> None:
             args.method_url,
             args.sha256,
         )
+    elif args.command == "check":
+        from aidd_agent.submission import check_leaderboard
+
+        result = check_leaderboard(args.receipt_dir)
     else:
         verify_data(args.data_dir)
         test = load_identities(args.data_dir / "cyp-challenge-TEST-BLINDED.csv")
