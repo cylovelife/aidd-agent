@@ -38,4 +38,6 @@ The 750-row CSV preserves official Molecule_Name/SMILES pairs and supplies all f
 - Python 3.12, locked dependencies in `uv.lock`; detailed versions and per-endpoint results in [run-2026-10-28.md](run-2026-10-28.md).
 - Reproduce with the commands in the repository [README](../README.md), using a new output directory.
 
-No official score is claimed in this report until the corresponding platform receipt has been recorded. Subsequent changes will distinguish local experiments, received submissions, scored submissions and final rankings.
+## Official live result
+
+On 2026-10-28 at 11:34 UTC (19:34 Asia/Shanghai), the official live regression leaderboard CSV contained the exact alias `aidd-agent` and this entry's versioned method URL. The score was **MA-ST-RAE 0.9284982814029326**, ranked **223 of 281 current entries**. This is a scored submission on the live public leaderboard, not a final ranking. The official split and bootstrap protocol differ from the local development point estimate; these numbers do not constitute a controlled comparison. Evidence is recorded in [leaderboard-result.json](leaderboard-result.json).

@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-28T11:34:14.653239+00:00",
+  "status": "scored",
+  "entry": {
+    "rank": 223,
+    "leaderboard_entries": 281,
+    "ma_st_rae": 0.9284982814029326,
+    "submitted": "2026-10-28 11:17 UTC",
+    "alias": "aidd-agent",
+    "method_url": "https://github.com/cylovelife/aidd-agent/blob/9e83882/docs/method-report.md",
+    "leaderboard_scope": "live public regression leaderboard, not final ranking"
+  },
+  "leaderboard_sha256": "d1efe981102b93c8a8486df0845f1341e6b53ee03b495bae8b262d4446d1f478",
+  "official_source": "https://huggingface.co/spaces/openadmet/cyp-challenge"
+}
