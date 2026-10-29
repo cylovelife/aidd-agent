@@ -21,6 +21,11 @@
 **不提交，确认集继续封存**。见[第一性原理与来源研究](docs/round4-research.md)、
 [冻结方案](docs/round4-plan.md)、[结果与复现](docs/round4-results.md)。
 
+第五轮逐条复核79条可疑精确低活性记录的原文/SI，仅2条原始曲线支持保守删失界限，
+未补齐多骨架覆盖。固定删失监督对照总体仅改善0.48%，低活性层反而恶化4.27%；
+**不提交，确认集仍未评估**。见[审计、实测与限制](docs/round5-results.md)、
+[拟合前方案](docs/round5-plan.md)、[26个出处的证据锁](docs/round5-evidence-lock.json)。
+
 - [竞赛执行计划与进度](docs/competition-plan.md)
 - [资格、规则与官方来源](docs/cyp-rules.md)
 - [公开方法报告](docs/method-report.md)

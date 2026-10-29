@@ -44,6 +44,13 @@ def main() -> None:
         external.add_argument("--output-dir", type=Path, required=True)
         if name == "external":
             external.add_argument("--audit-dir", type=Path, required=True)
+    censored = commands.add_parser(
+        "censored", help="Run hash-locked primary-evidence interval protocol"
+    )
+    censored.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
+    censored.add_argument("--aux-dir", type=Path, default=Path("state/data/cyp-aux"))
+    censored.add_argument("--audit-dir", type=Path, required=True)
+    censored.add_argument("--output-dir", type=Path, required=True)
     validate = commands.add_parser(
         "validate", help="Check identity, schema and upstream validation"
     )
@@ -83,6 +90,10 @@ def main() -> None:
         result = run_external(
             args.data_dir, args.aux_dir, args.public_dir, args.audit_dir, args.output_dir
         )
+    elif args.command == "censored":
+        from aidd_agent.censored_transfer import run_censored
+
+        result = run_censored(args.data_dir, args.aux_dir, args.audit_dir, args.output_dir)
     elif args.command == "submit":
         from aidd_agent.submission import submit_once
 

@@ -1,0 +1,241 @@
+{
+  "audit_date": "2026-10-29",
+  "scope": "79 previously quarantined ChEMBL low-activity records /26 source documents; not 79 newly verified exact labels",
+  "audit_sha256": "7ad667cb1937544a78a357652135a39c655ff31b4f1dd0ff7da26933ebacfd87",
+  "raw_input_sha256": "1b68017eff221cc703e5525cbcb68a2eaeb8453fee37276fa8cb9eac60b81cbc",
+  "reviewed_sha256": "75e47ecff308fc8d9bec86bcfb8c016b6a2afd2bdda3173d261882d5f4009739",
+  "admitted_sha256": "f3aaf4f9760bc263c860b0c1a24ac5a81c5b5f94baf55a3610466b0c81e8c107",
+  "decisions": {
+    "quarantine": 65,
+    "duplicate": 10,
+    "admit_censored": 2,
+    "exclude_tdi": 2
+  },
+  "source_evidence_sha256": {
+    "state/sources/round4/chembl-low-quarantine.csv": "1b68017eff221cc703e5525cbcb68a2eaeb8453fee37276fa8cb9eac60b81cbc",
+    "state/sources/round5/root-findings.json": "a7e408a31723b9378b8e2334f085f007815be8cb464c79eac49377b639ca9bf1",
+    "state/sources/round5/acs_audit/findings.json": "8028b04238186748aefa5caf18ca8cf9683c9ee8dd2f8d026e1a0c8cec77766b",
+    "state/sources/round5/units_audit/findings.json": "0e5de702c2f01577f103ff247da612caa03b70c9c5c74e4056aaaca44f720911",
+    "state/sources/round5/rsc_patent_audit/findings.json": "1a87c6ebbf4dc1b0eb8f53f566bf56c1b78923c0bad6f28da8f9ae7d64eea299",
+    "state/sources/round5/jm0c00101_si_001.pdf": "3b4405c52ccfeca4e5cd78c74990d2422dcc4e449f6bdb8ead17d80d13fe8125",
+    "state/sources/round5/root_audit/2020-si-07.png": "8056ad78b1ff678899f5e95e5d236eb1902aa3ca9d896038ebeb2c4888ab06c0",
+    "state/sources/round5/root_audit/2020-si-08.png": "ce1bbecf8fbc3c32a5b116b4df4b3cdbafd4439c6139a97ffd0f3da34c017a25",
+    "state/sources/round5/units_audit/curcumin-author-fulltext-readable.txt": "77852171aaf24bb7522337498d1aa7332f8adb6db67259f0d36574c2937ad874",
+    "state/sources/round5/rsc_patent_audit/patent.pdf": "d4696b770649dbfd416dd30c1dab26745184810b256eb012920b2cde465a8384",
+    "state/sources/round5/root_audit/elsevier2015-si-candidate.pdf": "39573927eb96083568e98efc3b46f12747b3252b2bb1b7062884364ac4d6b6c1"
+  },
+  "documents": [
+    {
+      "source": "10.1016/j.bmcl.2010.01.134",
+      "url": "https://doi.org/10.1016/j.bmcl.2010.01.134",
+      "records": 3,
+      "decisions": {
+        "quarantine": 3
+      }
+    },
+    {
+      "source": "10.1016/j.bmcl.2012.01.064",
+      "url": "https://doi.org/10.1016/j.bmcl.2012.01.064",
+      "records": 2,
+      "decisions": {
+        "quarantine": 2
+      }
+    },
+    {
+      "source": "10.1016/j.bmcl.2012.08.044",
+      "url": "https://doi.org/10.1016/j.bmcl.2012.08.044",
+      "records": 2,
+      "decisions": {
+        "quarantine": 2
+      }
+    },
+    {
+      "source": "10.1016/j.bmcl.2016.04.018",
+      "url": "https://doi.org/10.1016/j.bmcl.2016.04.018",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1016/j.bmcl.2020.127496",
+      "url": "https://doi.org/10.1016/j.bmcl.2020.127496",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1016/j.ejmech.2007.10.034",
+      "url": "https://doi.org/10.1016/j.ejmech.2007.10.034",
+      "records": 7,
+      "decisions": {
+        "quarantine": 6,
+        "duplicate": 1
+      }
+    },
+    {
+      "source": "10.1016/j.ejmech.2012.05.038",
+      "url": "https://doi.org/10.1016/j.ejmech.2012.05.038",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1016/j.ejmech.2015.08.051",
+      "url": "https://doi.org/10.1016/j.ejmech.2015.08.051",
+      "records": 2,
+      "decisions": {
+        "quarantine": 2
+      }
+    },
+    {
+      "source": "10.1021/acs.jmedchem.0c00101",
+      "url": "https://doi.org/10.1021/acs.jmedchem.0c00101",
+      "records": 4,
+      "decisions": {
+        "admit_censored": 2,
+        "exclude_tdi": 2
+      }
+    },
+    {
+      "source": "10.1021/acs.jmedchem.1c01083",
+      "url": "https://doi.org/10.1021/acs.jmedchem.1c01083",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/acs.jmedchem.3c01060",
+      "url": "https://doi.org/10.1021/acs.jmedchem.3c01060",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/acs.jmedchem.4c03121",
+      "url": "https://doi.org/10.1021/acs.jmedchem.4c03121",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/acs.jmedchem.9b00662",
+      "url": "https://doi.org/10.1021/acs.jmedchem.9b00662",
+      "records": 2,
+      "decisions": {
+        "quarantine": 2
+      }
+    },
+    {
+      "source": "10.1021/acsmedchemlett.6b00491",
+      "url": "https://doi.org/10.1021/acsmedchemlett.6b00491",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/jm0201924",
+      "url": "https://doi.org/10.1021/jm0201924",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/jm0209578",
+      "url": "https://doi.org/10.1021/jm0209578",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/jm049696n",
+      "url": "https://doi.org/10.1021/jm049696n",
+      "records": 13,
+      "decisions": {
+        "quarantine": 13
+      }
+    },
+    {
+      "source": "10.1021/jm049934e",
+      "url": "https://doi.org/10.1021/jm049934e",
+      "records": 11,
+      "decisions": {
+        "quarantine": 11
+      }
+    },
+    {
+      "source": "10.1021/jm0508538",
+      "url": "https://doi.org/10.1021/jm0508538",
+      "records": 2,
+      "decisions": {
+        "quarantine": 2
+      }
+    },
+    {
+      "source": "10.1021/jm0602256",
+      "url": "https://doi.org/10.1021/jm0602256",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/jm070521y",
+      "url": "https://doi.org/10.1021/jm070521y",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1021/jm800888q",
+      "url": "https://doi.org/10.1021/jm800888q",
+      "records": 2,
+      "decisions": {
+        "quarantine": 2
+      }
+    },
+    {
+      "source": "10.1021/jm901042m",
+      "url": "https://doi.org/10.1021/jm901042m",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1039/C1MD00021G",
+      "url": "https://doi.org/10.1039/C1MD00021G",
+      "records": 1,
+      "decisions": {
+        "quarantine": 1
+      }
+    },
+    {
+      "source": "10.1039/d4md00240g",
+      "url": "https://doi.org/10.1039/d4md00240g",
+      "records": 3,
+      "decisions": {
+        "quarantine": 3
+      }
+    },
+    {
+      "source": "US8609708B2",
+      "url": "https://patents.google.com/patent/US8609708B2/en",
+      "records": 13,
+      "decisions": {
+        "duplicate": 9,
+        "quarantine": 4
+      }
+    }
+  ],
+  "training_semantics": "Only two original-SI-derived conservative pIC50<=4 bounds; one study and one scaffold, external weight0.25 and one regularized assay offset; no restored exact IC50 labels"
+}
