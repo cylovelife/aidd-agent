@@ -26,6 +26,10 @@ def main() -> None:
     optimize = commands.add_parser("optimize", help="Run the frozen second-round protocol")
     optimize.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
     optimize.add_argument("--output-dir", type=Path, required=True)
+    transfer = commands.add_parser("transfer", help="Run gated auxiliary-assay transfer protocol")
+    transfer.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
+    transfer.add_argument("--aux-dir", type=Path, default=Path("state/data/cyp-aux"))
+    transfer.add_argument("--output-dir", type=Path, required=True)
     validate = commands.add_parser(
         "validate", help="Check identity, schema and upstream validation"
     )
@@ -51,6 +55,10 @@ def main() -> None:
         from aidd_agent.optimization import run_optimization
 
         result = run_optimization(args.data_dir, args.output_dir)
+    elif args.command == "transfer":
+        from aidd_agent.transfer import run_transfer
+
+        result = run_transfer(args.data_dir, args.aux_dir, args.output_dir)
     elif args.command == "submit":
         from aidd_agent.submission import submit_once
 
