@@ -18,6 +18,7 @@
 ## Verification and recovery
 
 - Verified commands: `uv sync --frozen`, `uv run pytest`, `uv run ruff check .`, `uv run ruff format --check .`, `uv run mypy src/aidd_agent`. The optional submission SDK uses `uv sync --frozen --group submission`.
+- Optional CPU neural experiments use `uv sync --frozen --group neural` and `uv run --group neural pytest`; ordinary commands do not require PyTorch. Auxiliary-transfer protocols and evaluated outcomes live in `docs/round3-plan.md`, `docs/round3b-plan.md`, and `docs/round3-results.md`.
 - Tests cover input/schema failures, molecule split isolation, official metric semantics and submission identity/finite-value validation. Unit tests do not access the network.
 - Each run gets a fresh output directory. Failures retain diagnostic evidence; do not overwrite raw inputs or the last valid submission. Rerunning preparation must verify existing hashes.
 - GitHub synchronization is authorized; commits use the verified personal GitHub identity. External submission uses the user's actual HF identity and the reviewed method report.

@@ -19,6 +19,9 @@ dependencies = [
 
 [dependency-groups]
 dev = ["mypy>=1.14,<2", "pandas-stubs>=2.2,<3", "pytest>=8,<10", "ruff>=0.9,<1"]
+neural = [
+    "torch>=2.6,<3",
+]
 submission = ["gradio-client>=1.8,<3"]
 
 [project.scripts]

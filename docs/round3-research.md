@@ -51,3 +51,18 @@ CYP3A4 上观测更多，但测量条件/机制不同；本轮先隔离检验单
 
 检索预算：Standard TECH，最多 20 个针对性查询；当前主问题已获得方法、代码及
 本地数据证据，停止泛搜。检索及源版本快照留在忽略目录 `state/sources/round3/`。
+
+## Stage B与实现风险补充
+
+Stage A门槛失败后另行预登记 [Stage B](round3b-plan.md)，测试相同共享层的直接/
+联合任务网络及低高层平衡，未改Stage A结论或确认分区。PyTorch实际锁定2.15.0；
+[AdamW](https://docs.pytorch.org/docs/2.15/generated/torch.optim.AdamW.html)、
+[SmoothL1](https://docs.pytorch.org/docs/2.15/generated/torch.nn.SmoothL1Loss.html)与
+[确定性设置](https://docs.pytorch.org/docs/2.15/notes/randomness.html)按官方API核验。
+
+另扫维护者FAQ及closed issues作故障反证：
+[Chemprop FAQ](https://github.com/chemprop/chemprop/discussions/1042)确认缺失目标用mask，
+[issue1122](https://github.com/chemprop/chemprop/issues/1122)的维护者将该案例归于无效/
+缺失SMILES，不能误读成“多任务不支持NaN”。本项目自行实现明确的标签mask，
+保留真实loss/gradient与SMILES失败测试。Reddit只作线索扫描，不作为技术结论证据。
+没有据这些讨论调整已冻结的候选。最终效果与未解决边界见 [实验结果](round3-results.md)。

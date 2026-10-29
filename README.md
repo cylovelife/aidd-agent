@@ -12,6 +12,10 @@
 1.45 GiB。开发集结果不能代替盲测分数；见[第二轮运行与差距分析](docs/run-2026-10-29.md)、
 [第二轮方法报告](docs/method-report-round2.md)和[第二轮官方状态](docs/submission-round2.md)。
 
+第三轮已完成辅助数据审计、折外迁移与联合任务网络两阶段实验；低活性误差有下降，
+但未兼顾总体/高活性，**没有提交新结果**，保留确认集。
+见[第三轮结果与未解决的数据缺口](docs/round3-results.md)、[调研依据](docs/round3-research.md)。
+
 - [竞赛执行计划与进度](docs/competition-plan.md)
 - [资格、规则与官方来源](docs/cyp-rules.md)
 - [公开方法报告](docs/method-report.md)
@@ -29,7 +33,17 @@ uv run aidd baseline --output-dir state/runs/my-first-run
 uv run aidd validate state/runs/my-first-run/regression.csv
 uv run aidd optimize --output-dir state/runs/my-second-run
 uv run aidd validate state/runs/my-second-run/regression.csv
+uv run aidd transfer --output-dir state/runs/my-third-run
 ```
+
+可选CPU神经对照（不需要GPU）：
+
+```bash
+uv sync --frozen --group neural
+uv run --group neural aidd transfer --neural --output-dir state/runs/my-neural-run
+```
+
+第三轮命令会执行冻结门槛；未达标时只保存实验报告，不生成可上传预测。
 
 输出目录必须不存在，已有原始数据须通过 SHA256 校验；不覆盖旧实验。原始文件、预测与本地回执保存在被 Git 忽略的 `state/`。
 

@@ -1,0 +1,39 @@
+{
+  "stage": "B",
+  "submission_eligible": false,
+  "gate_reasons": [
+    "development_no_eligible_2d6_model"
+  ],
+  "selected": {
+    "CYP1A2_pIC50_direct_inhibition": "baseline",
+    "CYP2C9_pIC50_direct_inhibition": "baseline",
+    "CYP2D6_pIC50_direct_inhibition": "baseline",
+    "CYP3A4_pIC50_direct_inhibition": "baseline"
+  },
+  "confirmation": {
+    "opened": false
+  },
+  "submission": null,
+  "platform_submission": "not_submitted",
+  "elapsed_seconds": 53.538154291920364,
+  "peak_rss_bytes": 1910996992,
+  "protocol_sha256": "e7d374b476c98cd71dc598d937efc9e49df4e5baed95f861c3f01bf9352774ff",
+  "interpretation": "No blind improvement is claimed; failed local gates prohibit upload",
+  "audit": {
+    "auxiliary_revision": "d7eb3c973dca01aad8e33c91c29e5123fd925d8f",
+    "auxiliary_sha256": "cf275440aa33d10b16e7a3a19f1b196d59dc379052175ab79b47ca43db663c7a",
+    "molecules": 4906,
+    "unique_canonical": 4906,
+    "test_canonical_overlap": 0,
+    "screen_rows": 17504,
+    "complete_screen_molecules": 4376,
+    "measured_direct": {
+      "CYP1A2_pIC50_direct_inhibition": 1412,
+      "CYP2C9_pIC50_direct_inhibition": 1285,
+      "CYP2D6_pIC50_direct_inhibition": 1493,
+      "CYP3A4_pIC50_direct_inhibition": 2335
+    },
+    "additional_direct_labels": 0,
+    "scope": "Single-concentration readouts are auxiliary outcomes, never imputed pIC50 labels"
+  }
+}

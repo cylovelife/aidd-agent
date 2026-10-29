@@ -3,7 +3,7 @@
 @author cylovelife
 """
 
-from typing import TypedDict
+from typing import Protocol, TypedDict
 
 import numpy as np
 import pandas as pd
@@ -27,6 +27,22 @@ class ExclusionTrace(TypedDict):
     fold: int | str
     aux_fit: list[int]
     valid: list[int]
+
+
+class CandidateFitter(Protocol):
+    def __call__(
+        self,
+        frame: pd.DataFrame,
+        auxiliary: NDArray,
+        groups: NDArray,
+        features: MolecularFeatures,
+        other: MolecularFeatures,
+        kernels: dict[str, NDArray],
+        cross: dict[str, NDArray],
+        fit: NDArray[np.int64],
+        query: NDArray[np.int64],
+        requested: frozenset[str] | None = None,
+    ) -> tuple[dict[str, dict[str, NDArray]], NDArray | None, list[ExclusionTrace]]: ...
 
 
 def predict_screen(

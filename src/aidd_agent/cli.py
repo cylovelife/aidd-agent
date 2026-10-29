@@ -30,6 +30,9 @@ def main() -> None:
     transfer.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
     transfer.add_argument("--aux-dir", type=Path, default=Path("state/data/cyp-aux"))
     transfer.add_argument("--output-dir", type=Path, required=True)
+    transfer.add_argument(
+        "--neural", action="store_true", help="Run optional Stage B neural controls"
+    )
     validate = commands.add_parser(
         "validate", help="Check identity, schema and upstream validation"
     )
@@ -58,7 +61,7 @@ def main() -> None:
     elif args.command == "transfer":
         from aidd_agent.transfer import run_transfer
 
-        result = run_transfer(args.data_dir, args.aux_dir, args.output_dir)
+        result = run_transfer(args.data_dir, args.aux_dir, args.output_dir, neural=args.neural)
     elif args.command == "submit":
         from aidd_agent.submission import submit_once
 

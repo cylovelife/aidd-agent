@@ -16,6 +16,7 @@ from aidd_agent.transfer_validation import (
     confirmation_gate,
     development_splits,
     freeze_confirmation,
+    paired_bootstrap,
 )
 
 
@@ -160,3 +161,17 @@ def test_experiment_refuses_to_overwrite_before_reading_inputs(tmp_path):
 def test_gate_rejects_nonfinite_scores():
     target = "CYP2D6_pIC50_direct_inhibition"
     assert not confirmation_gate({target: score()}, {target: score(float("nan"))}, -0.1)[0]
+
+
+def test_paired_group_bootstrap_recognizes_gain_on_synthetic_observed_labels():
+    truth = np.linspace(2.0, 7.0, 200)
+    frame = pd.DataFrame({t: truth for t in TARGETS})
+    for target in TARGETS:
+        frame[target + "_conf_low"] = truth - 0.1
+        frame[target + "_conf_high"] = truth + 0.1
+    groups = np.array([f"g{i // 4}" for i in range(len(truth))])
+    baseline = {t: np.full(len(truth), truth.mean()) for t in TARGETS}
+    candidate = {t: truth.copy() for t in TARGETS}
+    result = paired_bootstrap(frame, groups, baseline, candidate, np.arange(len(truth)))
+    assert result["resamples"] == 1000
+    assert result["macro_difference_percentile_95"][1] < -0.9

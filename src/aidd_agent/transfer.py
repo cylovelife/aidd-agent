@@ -9,6 +9,7 @@ import json
 import resource
 import time
 from datetime import UTC, datetime
+from functools import partial
 from pathlib import Path
 
 import numpy as np
@@ -21,7 +22,7 @@ from aidd_agent.contracts import IDENTIFIERS, TARGETS, validate_submission
 from aidd_agent.features import MolecularFeatures, extract_features, tanimoto_kernel
 from aidd_agent.optimization import check_budget
 from aidd_agent.sources import sha256_file
-from aidd_agent.transfer_models import TRANSFER_CANDIDATES, fit_transfer_candidates
+from aidd_agent.transfer_models import TRANSFER_CANDIDATES, CandidateFitter, fit_transfer_candidates
 from aidd_agent.transfer_validation import (
     TWO_D6,
     ScoreRecord,
@@ -124,31 +125,54 @@ def evaluate_predictions(
     return records
 
 
-def run_transfer(data_dir: Path, aux_dir: Path, output_dir: Path) -> dict[str, object]:
+def run_transfer(
+    data_dir: Path,
+    aux_dir: Path,
+    output_dir: Path,
+    neural: bool = False,
+) -> dict[str, object]:
     started = time.monotonic()
     if output_dir.exists():
         raise ValueError("Output directory already exists; preserve the previous experiment")
     data = load_auxiliary(data_dir, aux_dir)
     output_dir.mkdir(parents=True, exist_ok=False)
+    predictor: CandidateFitter = fit_transfer_candidates
+    candidates: tuple[str, ...] = TRANSFER_CANDIDATES
+    dependencies: tuple[str, ...] = ("numpy", "pandas", "rdkit", "scikit-learn", "scipy")
+    if neural:
+        from aidd_agent.neural_transfer import NEURAL_CANDIDATES, fit_neural_candidates
+
+        def progress(record: dict[str, object]) -> None:
+            with (output_dir / "neural-training.jsonl").open("a") as stream:
+                json.dump(
+                    {**record, "elapsed_seconds": time.monotonic() - started},
+                    stream,
+                    allow_nan=False,
+                )
+                stream.write("\n")
+
+        predictor = partial(fit_neural_candidates, deadline=started + 1700, progress=progress)
+        candidates = NEURAL_CANDIDATES
+        dependencies = (*dependencies, "torch")
     protocol = {
         "created_at": datetime.now(UTC).isoformat(),
-        "candidates": TRANSFER_CANDIDATES,
-        "plan_sha256": sha256_file(Path("docs/round3-plan.md")),
+        "candidates": candidates,
+        "stage": "B" if neural else "A",
+        "plan_sha256": sha256_file(
+            Path("docs/round3b-plan.md" if neural else "docs/round3-plan.md")
+        ),
         "audit": data.audit,
         "source_sha256": {
             str(p): sha256_file(p) for p in sorted(Path("src/aidd_agent").rglob("*.py"))
         },
         "uv_lock_sha256": sha256_file(Path("uv.lock")),
-        "dependencies": {
-            n: importlib.metadata.version(n)
-            for n in ("numpy", "pandas", "rdkit", "scikit-learn", "scipy")
-        },
+        "dependencies": {n: importlib.metadata.version(n) for n in dependencies},
         "scope": (
             "This-round independent confirmation after development selection; "
             "not historically untouched or equivalent to blind labels"
         ),
         "threads": 2,
-        "max_seconds": 1800,
+        "max_seconds": 1700 if neural else 1800,
         "max_rss_bytes": 4 * 1024**3,
     }
     write_json(output_dir / "protocol.json", protocol)
@@ -158,6 +182,10 @@ def run_transfer(data_dir: Path, aux_dir: Path, output_dir: Path) -> dict[str, o
     partitions["partition"] = "development"
     partitions.loc[confirmation, "partition"] = "confirmation"
     partitions.to_csv(output_dir / "confirmation-split.csv", index=False)
+    if neural and sha256_file(output_dir / "confirmation-split.csv") != (
+        "f9fa599c6d3f9536aa1d6c4e7cef9ea47f6159fba03950f994be34a3abb6104a"
+    ):
+        raise ValueError("Stage B must preserve the exact unopened Stage A confirmation partition")
     write_json(
         output_dir / "confirmation-lock.json",
         {
@@ -189,7 +217,7 @@ def run_transfer(data_dir: Path, aux_dir: Path, output_dir: Path) -> dict[str, o
         pd.DataFrame(assignment).to_csv(output_dir / "development-splits.csv", index=False)
         for split in splits:
             check_budget(started)
-            predictions, screen, trace = fit_transfer_candidates(
+            predictions, screen, trace = predictor(
                 data.molecules,
                 data.screen,
                 data.encoded.groups,
@@ -202,20 +230,26 @@ def run_transfer(data_dir: Path, aux_dir: Path, output_dir: Path) -> dict[str, o
             )
             write_json(output_dir / (split.name + "-exclusion-trace.json"), trace)
             screen_measured = np.isfinite(data.screen[split.valid]).all(axis=1)
-            write_json(
-                output_dir / (split.name + "-screen-validation.json"),
-                {
-                    "rows": int(screen_measured.sum()),
-                    "rmse_per_cyp": np.sqrt(
-                        np.mean(
-                            (screen[screen_measured] - data.screen[split.valid][screen_measured])
-                            ** 2,
-                            axis=0,
-                        )
-                    ).tolist(),
-                    "scope": "Auxiliary log2fc error only; never labels for missing direct pIC50",
-                },
-            )
+            if screen is not None:
+                write_json(
+                    output_dir / (split.name + "-screen-validation.json"),
+                    {
+                        "rows": int(screen_measured.sum()),
+                        "rmse_per_cyp": np.sqrt(
+                            np.mean(
+                                (
+                                    screen[screen_measured]
+                                    - data.screen[split.valid][screen_measured]
+                                )
+                                ** 2,
+                                axis=0,
+                            )
+                        ).tolist(),
+                        "scope": (
+                            "Auxiliary log2fc error only; never labels for missing direct pIC50"
+                        ),
+                    },
+                )
             records.extend(evaluate_predictions(data, split, predictions))
             pd.DataFrame(records).to_csv(output_dir / "development-validation.csv", index=False)
             out = data.molecules.loc[split.valid, list(IDENTIFIERS)].copy()
@@ -246,7 +280,7 @@ def run_transfer(data_dir: Path, aux_dir: Path, output_dir: Path) -> dict[str, o
                     "audit": split_audit(data, split, kernels["bits"]),
                 },
             )
-            predictions, screen, trace = fit_transfer_candidates(
+            predictions, screen, trace = predictor(
                 data.molecules,
                 data.screen,
                 data.encoded.groups,
@@ -279,7 +313,7 @@ def run_transfer(data_dir: Path, aux_dir: Path, output_dir: Path) -> dict[str, o
                 "bits": tanimoto_kernel(query.bits, features.bits),
                 "counts": tanimoto_kernel(query.counts, features.counts),
             }
-            final, _, trace = fit_transfer_candidates(
+            final, _, trace = predictor(
                 data.molecules,
                 data.screen,
                 data.encoded.groups,
@@ -310,6 +344,7 @@ def run_transfer(data_dir: Path, aux_dir: Path, output_dir: Path) -> dict[str, o
             }
             write_json(output_dir / "full-fit-exclusion-trace.json", trace)
         report: dict[str, object] = {
+            "stage": "B" if neural else "A",
             "submission_eligible": eligible,
             "gate_reasons": reasons,
             "selected": selected,
