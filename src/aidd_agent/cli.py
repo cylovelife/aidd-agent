@@ -23,6 +23,9 @@ def main() -> None:
     run = commands.add_parser("baseline", help="Run the frozen finite-budget regression protocol")
     run.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
     run.add_argument("--output-dir", type=Path, required=True)
+    optimize = commands.add_parser("optimize", help="Run the frozen second-round protocol")
+    optimize.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
+    optimize.add_argument("--output-dir", type=Path, required=True)
     validate = commands.add_parser(
         "validate", help="Check identity, schema and upstream validation"
     )
@@ -44,6 +47,10 @@ def main() -> None:
         result = download_data(args.data_dir)
     elif args.command == "baseline":
         result = run_baseline(args.data_dir, args.output_dir)
+    elif args.command == "optimize":
+        from aidd_agent.optimization import run_optimization
+
+        result = run_optimization(args.data_dir, args.output_dir)
     elif args.command == "submit":
         from aidd_agent.submission import submit_once
 

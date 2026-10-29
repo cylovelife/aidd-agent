@@ -56,3 +56,11 @@
 计划/执行：`writing-plans`、`executing-plans`；Git：`git-workflow`、`finishing-a-development-branch`；测试：`test-driven-development`；完成核验：`verification-before-completion`。已读取规则：`engineering-workflow.md`、`python/code-style.md`、`python/data-runtime.md`、`anti-hallucination.md`。个人 GitHub 提交不套用公司 Jira 前缀。
 
 工程初始仅有 README，Harness 分类为 **missing**；已最小补齐根级 `AGENTS.md`，记录当前数据、提交和验证边界。Python 环境命令在包建立后验证，以运行记录为准。
+
+## 第二轮优化（2026-10-29）
+
+用户授权分析差距、制定并执行优化、验证后提交并同步 GitHub。冻结方案见
+[round2-plan.md](round2-plan.md)，公开方法见 [method-report-round2.md](method-report-round2.md)。
+主数据与预算边界不变；10 个候选、3 个骨架开发切分，分终点选型，公榜不参与
+选择。运行与验证证据见 [run-2026-10-29.md](run-2026-10-29.md)，官方接收和评分
+另见 [submission-round2.md](submission-round2.md)，不覆盖首轮历史证据。

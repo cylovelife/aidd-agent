@@ -1,0 +1,47 @@
+{
+  "selected": {
+    "CYP1A2_pIC50_direct_inhibition": "hist_descriptors",
+    "CYP2C9_pIC50_direct_inhibition": "blend",
+    "CYP2D6_pIC50_direct_inhibition": "svr_bits_1",
+    "CYP3A4_pIC50_direct_inhibition": "blend"
+  },
+  "gate": true,
+  "macro_selected": 0.7356317237843286,
+  "macro_ridge": 0.9851671909596503,
+  "macro_median": 0.9781018106865662,
+  "submission_sha256": "f6b1987532b0d2469e5527f8702d6017f04dc5a65c32cebd6c4f16d50fc49b28",
+  "splits_sha256": "7d5a6f80246befdb8fadf81345af3786fb2d78e63a4f39251f44ab3928fefd12",
+  "elapsed_seconds": 126.26456095895264,
+  "peak_rss_bytes": 1551319040,
+  "official_validator": {
+    "valid": true,
+    "errors": []
+  },
+  "platform_submission": "not_submitted",
+  "scope": "Development selection, including reused seed 42; not independent test evidence",
+  "audit": {
+    "train_rows": 4905,
+    "test_rows": 750,
+    "canonical_overlap": 0,
+    "test_nearest_train_bit_tanimoto_quantiles": [
+      0.3181818181818182,
+      0.5427445732976509,
+      0.5873015873015873,
+      0.639344262295082,
+      0.9516129032258065
+    ],
+    "measured_labels": {
+      "CYP1A2_pIC50_direct_inhibition": 1412,
+      "CYP2C9_pIC50_direct_inhibition": 1285,
+      "CYP2D6_pIC50_direct_inhibition": 1493,
+      "CYP3A4_pIC50_direct_inhibition": 2335
+    }
+  },
+  "reproduction": {
+    "max_absolute_prediction_difference": 1.7763568394002505e-15,
+    "exact_csv_hash_match": false,
+    "selected_models_match": true,
+    "split_hash_match": true,
+    "final_source_hash_match": true
+  }
+}

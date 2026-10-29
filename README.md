@@ -4,6 +4,11 @@
 
 首次预测已获官方评分：截至 2026-10-28 19:34（北京时间），显示名 `aidd-agent`，实时回归榜 **223 / 281**，**MA-ST-RAE 0.928498**（越低越好）。本轮有效提交目标达成；这不是最终名次，见[提交与评分记录](docs/submission-status.md)。
 
+2026-10-29 第二轮优化：10 个固定候选、3 个骨架开发切分，宏平均误差由原 Ridge
+0.985167 降至 **0.735632**（下降 25.33%），本机单次约 2 分钟、峰值内存约
+1.45 GiB。开发集结果不能代替盲测分数；见[第二轮运行与差距分析](docs/run-2026-10-29.md)、
+[第二轮方法报告](docs/method-report-round2.md)和[第二轮官方状态](docs/submission-round2.md)。
+
 - [竞赛执行计划与进度](docs/competition-plan.md)
 - [资格、规则与官方来源](docs/cyp-rules.md)
 - [公开方法报告](docs/method-report.md)
@@ -19,6 +24,8 @@ uv sync --frozen
 uv run aidd fetch
 uv run aidd baseline --output-dir state/runs/my-first-run
 uv run aidd validate state/runs/my-first-run/regression.csv
+uv run aidd optimize --output-dir state/runs/my-second-run
+uv run aidd validate state/runs/my-second-run/regression.csv
 ```
 
 输出目录必须不存在，已有原始数据须通过 SHA256 校验；不覆盖旧实验。原始文件、预测与本地回执保存在被 Git 忽略的 `state/`。

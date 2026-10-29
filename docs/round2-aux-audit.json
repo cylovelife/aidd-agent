@@ -1,0 +1,30 @@
+{
+  "revision": "d7eb3c973dca01aad8e33c91c29e5123fd925d8f",
+  "files": [
+    {
+      "name": "cyp-challenge-TRAIN_Emax.csv",
+      "sha256": "482f686a9a9f9166f290e6f5ea463a99de1da478b179a88f4baef48bc66501f1",
+      "rows": 6145,
+      "unique_ids": 6145,
+      "test_id_overlap": 0,
+      "used_for_training": false
+    },
+    {
+      "name": "cyp-challenge-TRAIN_TDI.csv",
+      "sha256": "b458f599a792412292664386e8f18adc5d4a4129d6bd212ae80a60fb9b96bb60",
+      "rows": 6145,
+      "unique_ids": 6145,
+      "test_id_overlap": 0,
+      "used_for_training": false
+    },
+    {
+      "name": "cyp-challenge-single-concentration-TRAIN.csv",
+      "sha256": "cf275440aa33d10b16e7a3a19f1b196d59dc379052175ab79b47ca43db663c7a",
+      "rows": 17504,
+      "unique_ids": 4376,
+      "test_id_overlap": 0,
+      "used_for_training": false
+    }
+  ],
+  "finding": "TDI has zero additional direct-inhibition labels; Emax and single-concentration are auxiliary outcomes, not available test inputs. No auxiliary table used in round 2."
+}
