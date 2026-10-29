@@ -1,0 +1,15 @@
+{
+  "tests": "39 passed",
+  "ruff": "passed",
+  "mypy": "17 source files passed",
+  "wheel_real_fit": "passed",
+  "raw_replay_files": 33,
+  "source_protocol_hashes": "all matched",
+  "external_official_parent_overlap": 0,
+  "external_official_scaffold_overlap": 0,
+  "development_confirmation_overlap": 0,
+  "confirmation_opened": false,
+  "blind_predictions_created": false,
+  "platform_upload_called": false,
+  "report_sha256": "b9684229e6eef563927b8ad78503dea359c58085118d53ad5fbb67c3617b3a24"
+}

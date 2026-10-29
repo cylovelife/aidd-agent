@@ -1,0 +1,177 @@
+{
+  "retrieved_on": "2026-10-29",
+  "chembl_version": "ChEMBL_37",
+  "chembl_expected_total": 8684,
+  "pubchem_aid": 891,
+  "pubchem_expected_sids_n": 10320,
+  "concise_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/891/concise/CSV",
+  "concise_sha256": "1e4dd39cb87d1a3867bbc14911574eec03d8f3d63ae19f996cc25dddd98b16a3",
+  "files": [
+    {
+      "name": "pubchem-891-00000.csv",
+      "sha256": "c56ef01a34a71105011a23fe17ad1a5f94c7ad527337faac62d518556ece369e",
+      "bytes": 117634
+    },
+    {
+      "name": "pubchem-891-00500.csv",
+      "sha256": "9d5960959f4a900a9a1949bca3c87ae8ce2bb29a51f970a994ecbd9a1a3f70c4",
+      "bytes": 112082
+    },
+    {
+      "name": "pubchem-891-01000.csv",
+      "sha256": "b6dd94078b8406d5c4433ec930fc3d270cab2f15035fb06c6c03436d60c40661",
+      "bytes": 115721
+    },
+    {
+      "name": "pubchem-891-01500.csv",
+      "sha256": "92bbcf4c70883e5be8c408666883ea5534b834cd368e4653d56e4f56b145d30b",
+      "bytes": 114237
+    },
+    {
+      "name": "pubchem-891-02000.csv",
+      "sha256": "05c2318919757973c95a38ce23ecd381fad63464165d230306741e29ad33ffb1",
+      "bytes": 114833
+    },
+    {
+      "name": "pubchem-891-02500.csv",
+      "sha256": "10c2fa557dc446ca8eed9afaeec5c91a561b057108accabb652543badd32096f",
+      "bytes": 115059
+    },
+    {
+      "name": "pubchem-891-03000.csv",
+      "sha256": "d4295de2cb45056952ecceee10c9b7b0c9f0b7b1ae72773a919d720fbb0bf587",
+      "bytes": 99660
+    },
+    {
+      "name": "pubchem-891-03500.csv",
+      "sha256": "fd72d9feb9ae62dba2af3cd9ed271f9ec34a0397d98cb3a6d095da5404a84932",
+      "bytes": 100872
+    },
+    {
+      "name": "pubchem-891-04000.csv",
+      "sha256": "9a332e8ef5c8d1770f6367b292ce16bf0091519abcfa95104d048be8dddc6760",
+      "bytes": 101462
+    },
+    {
+      "name": "pubchem-891-04500.csv",
+      "sha256": "ee39f84e335b4a235d1b61dc42f632c39b63bfa73eda30d3ecdc3f0846d3da39",
+      "bytes": 103901
+    },
+    {
+      "name": "pubchem-891-05000.csv",
+      "sha256": "d537050348807430841d8ef375ef86cff96ffe709b9d8a63b3e730db53bcd9a7",
+      "bytes": 125770
+    },
+    {
+      "name": "pubchem-891-05500.csv",
+      "sha256": "1c6c57d643279704f3c728d60090da1874ef51ed2d36eafc4200235541dd1b5f",
+      "bytes": 128955
+    },
+    {
+      "name": "pubchem-891-06000.csv",
+      "sha256": "eba17da94eb125109480c069d453e86cdb0e50244f9fdfc6398ffdbfa55dfae2",
+      "bytes": 132972
+    },
+    {
+      "name": "pubchem-891-06500.csv",
+      "sha256": "e5306915ae1a03284847f821e4a39c4ac586769040498cfbdc4481edcd7cfb27",
+      "bytes": 128842
+    },
+    {
+      "name": "pubchem-891-07000.csv",
+      "sha256": "82e162ffead97bdc1255a9409d8ca9d9fd208a4761e5549c46a1717f965ee9f2",
+      "bytes": 136683
+    },
+    {
+      "name": "pubchem-891-07500.csv",
+      "sha256": "8aeec75644a09bd9ce120ba88f5ff69c787e86b5143284534e9b7d95f3e04ed5",
+      "bytes": 133027
+    },
+    {
+      "name": "pubchem-891-08000.csv",
+      "sha256": "03af190d3f888595071760159bb6f8d131643cbc1b53ac7c6afaa3d5cba1afb7",
+      "bytes": 137238
+    },
+    {
+      "name": "pubchem-891-08500.csv",
+      "sha256": "7decbac08a5b4c63552ccf4fe4241c8b3ed1152a40394a6f1571ef4194bdf827",
+      "bytes": 133280
+    },
+    {
+      "name": "pubchem-891-09000.csv",
+      "sha256": "9fc9e95c7134f0d9aff66ba73be58739ba41c5658edeaad36feb262e3f18fdd2",
+      "bytes": 125920
+    },
+    {
+      "name": "pubchem-891-09500.csv",
+      "sha256": "7382778828a1a38e8fcbc2c104358eada8143783b0ea6e2225ab24f18b572904",
+      "bytes": 118776
+    },
+    {
+      "name": "pubchem-891-10000.csv",
+      "sha256": "1752e5fc3c732f63a6481d398993dd37f968ec64f8afd29a704554d429a2723e",
+      "bytes": 68156
+    },
+    {
+      "name": "chembl-2d6-00000.json",
+      "sha256": "dc8df94c79658e83e111ea2e4b3f67d847abf129a04aaf3d19dfa0bb4813c1e5",
+      "bytes": 1398782
+    },
+    {
+      "name": "chembl-2d6-01000.json",
+      "sha256": "0aec8bba9d957e0c5352d2c63110337351b3146d2debbe9d07067a7eac40e76a",
+      "bytes": 1383146
+    },
+    {
+      "name": "chembl-2d6-02000.json",
+      "sha256": "6d173bfa5d639c3c99b17c61b2f6c2822fcc848c06d249ad20706e17480a6941",
+      "bytes": 1420856
+    },
+    {
+      "name": "chembl-2d6-03000.json",
+      "sha256": "7e4c2824446710e0462fdd691459dcdde1269ed79525c17f898f640cdb305f30",
+      "bytes": 1418896
+    },
+    {
+      "name": "chembl-2d6-04000.json",
+      "sha256": "7cd4778c3b935696d003cac62b55b3b986064ae98bd2d86f099b327fed1fd267",
+      "bytes": 1471227
+    },
+    {
+      "name": "chembl-2d6-05000.json",
+      "sha256": "f6f6ced43cbd5121962c951d4b668fa07f6d5b211ee30ed3c7d7c1f0e70c3c83",
+      "bytes": 1591311
+    },
+    {
+      "name": "chembl-2d6-06000.json",
+      "sha256": "bd8b083b53bd147b6c83046346b748da305bdb5d897318f85fc93e69e71708c5",
+      "bytes": 1498760
+    },
+    {
+      "name": "chembl-2d6-07000.json",
+      "sha256": "54da68b3b308fbec40575f842e44d084c16ef5f937330b88ddfb7355b15c416a",
+      "bytes": 1748147
+    },
+    {
+      "name": "chembl-2d6-08000.json",
+      "sha256": "902aef4c415eadf340f3b9e045bb5001b01a452616edb07f7ac407e6c5c8812f",
+      "bytes": 1568949
+    },
+    {
+      "name": "pubchem-891-description.json",
+      "sha256": "2c11878f6e48c1162ac25e96abe314125d2011bf025725bf308bc4a852b63f5e",
+      "bytes": 15555
+    },
+    {
+      "name": "chembl-status.json",
+      "sha256": "29dc1fb09487a8d2962253a4d0d92c4ded0aa0d831effab42445d0c3483d4740",
+      "bytes": 212
+    },
+    {
+      "name": "chembl-target.json",
+      "sha256": "31203254f3b37a36a8d9a09eb5074a56919227f74a243a8acfbaa0e81d3939bd",
+      "bytes": 7892
+    }
+  ],
+  "archived_manifest_sha256": "3cf33fab63ae947f68ac40fba382327eed1b44d5b627712f4f5e94ab421eb868"
+}

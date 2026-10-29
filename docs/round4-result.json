@@ -1,0 +1,137 @@
+{
+  "report": {
+    "submission_eligible": false,
+    "selected": "baseline",
+    "gate_reasons": [
+      "development_no_eligible_external_model"
+    ],
+    "confirmation": {
+      "opened": false
+    },
+    "platform_submission": "not_submitted",
+    "submission": null,
+    "elapsed_seconds": 8.15446474996861,
+    "peak_rss_bytes": 912162816,
+    "external_audit_sha256": "10d3dd67e7d6dbae97ebcd1055a25bd8f37525c86f692e75b04af08e9fefb6c2",
+    "protocol_sha256": "2c74f332b269f950978c0faa8a3f783fd2d1668dd65d162eeaa1f8aa39cbdfdf"
+  },
+  "audit": {
+    "raw_by_source": {
+      "chembl37": 8684,
+      "pubchem891": 10320
+    },
+    "accepted_by_source": {
+      "chembl37": 6176,
+      "pubchem891": 8408
+    },
+    "retained_by_source": [
+      {
+        "source": "chembl37",
+        "n": 5062,
+        "active": 1413,
+        "inactive": 3649
+      },
+      {
+        "source": "pubchem891",
+        "n": 5674,
+        "active": 1163,
+        "inactive": 4511
+      }
+    ],
+    "exact_low": 0,
+    "censored_low_upper": 257,
+    "exclusion": {
+      "accepted_before_exclusion": 14584,
+      "official_parent_overlap_rows": 380,
+      "official_scaffold_overlap_rows": 2386,
+      "conflict_source_parent_groups": 105,
+      "retained_classes": 10736
+    },
+    "elapsed_seconds": 21.937844082945958,
+    "raw_manifest_sha256": "3cf33fab63ae947f68ac40fba382327eed1b44d5b627712f4f5e94ab421eb868",
+    "source_sha256": "7c4ba8aabae6f202cd8dfce3e8ab3faf36118a053d32e75761f0f12eb4f66470",
+    "artifacts": {
+      "observations.csv": "59d20e23f8d05d9bc2e6620e289556ecfacb8ca7ddfef4fadb0dcd3b29fed4d8",
+      "allowed-classes.csv": "72cd7c7c87e93271100fd1851509870e3b14bbdba1911a341af3fa40571bc98e",
+      "official-keys.csv": "efd7c214b0364339d52a85649143464c4696bff88b6fa9e756aab45e756f8cbe"
+    }
+  },
+  "development_means": {
+    "baseline": {
+      "st_rae": 0.9326286069156123,
+      "low_distance": 0.8048569377574651,
+      "high_distance": 0.36200269777016575,
+      "low_bias": 1.9024053229925928,
+      "high_bias": -0.17343938300642056
+    },
+    "calibration_control": {
+      "st_rae": 0.9395660687884555,
+      "low_distance": 0.6378369945815544,
+      "high_distance": 0.3838497846841264,
+      "low_bias": 1.7262196950510056,
+      "high_bias": -0.23985855973436862
+    },
+    "external_blend": {
+      "st_rae": 0.9204863923163109,
+      "low_distance": 0.7134662568216742,
+      "high_distance": 0.36616723309331717,
+      "low_bias": 1.808990393544201,
+      "high_bias": -0.20352357829932954
+    },
+    "external_calibration": {
+      "st_rae": 0.9410170132159251,
+      "low_distance": 0.632011974200699,
+      "high_distance": 0.3848375262306499,
+      "low_bias": 1.715575464095809,
+      "high_bias": -0.23360777359223853
+    }
+  },
+  "development_relative_changes": {
+    "calibration_control": {
+      "st_rae": -0.007438611491649099,
+      "low_distance": 0.20751506925102803,
+      "high_distance": -0.06035061906591449
+    },
+    "external_blend": {
+      "st_rae": 0.01301934608188584,
+      "low_distance": 0.11354897578497426,
+      "high_distance": -0.011504155490563411
+    },
+    "external_calibration": {
+      "st_rae": -0.00899436950369227,
+      "low_distance": 0.21475240561180464,
+      "high_distance": -0.06307916653975291
+    }
+  },
+  "control_blend_postgate_mean": {
+    "st_rae": 0.9228733362443545,
+    "low_distance": 0.7181027008059919,
+    "high_distance": 0.36681216221027846
+  },
+  "external_validation": [
+    {
+      "source": "pubchem891",
+      "fit_n": 4601,
+      "valid_n": 1073,
+      "auroc": 0.8648246829372269,
+      "balanced_accuracy": 0.7599355216881594,
+      "scaffold_overlap": 0
+    },
+    {
+      "source": "chembl37",
+      "fit_n": 4103,
+      "valid_n": 959,
+      "auroc": 0.8217866625019522,
+      "balanced_accuracy": 0.7345879535634339,
+      "scaffold_overlap": 0
+    }
+  ],
+  "artifact_sha256": {
+    "protocol.json": "2c74f332b269f950978c0faa8a3f783fd2d1668dd65d162eeaa1f8aa39cbdfdf",
+    "report.json": "b9684229e6eef563927b8ad78503dea359c58085118d53ad5fbb67c3617b3a24",
+    "development.csv": "7766ae3af4a24b6142f8057caef6f48807462485c53a64ddf98287dec67b979c",
+    "external-validation.json": "8a509c6bf9164cd7d1fcbd5f5b653e8a40123ec2b9386b4fc309f71e7385f8a3",
+    "confirmation-partition.csv": "f9fa599c6d3f9536aa1d6c4e7cef9ea47f6159fba03950f994be34a3abb6104a",
+    "postgate-control-blend-diagnostic.json": "ebd1398ed9935fdb15d35123332ef9700744c460f64090e174ec010dbeb01ca4"
+  }
+}

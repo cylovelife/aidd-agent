@@ -33,6 +33,17 @@ def main() -> None:
     transfer.add_argument(
         "--neural", action="store_true", help="Run optional Stage B neural controls"
     )
+    for name, help_text in (
+        ("audit-external", "Audit archived public CYP2D6 observations and leakage"),
+        ("external", "Run frozen source-specific external transfer experiment"),
+    ):
+        external = commands.add_parser(name, help=help_text)
+        external.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
+        external.add_argument("--aux-dir", type=Path, default=Path("state/data/cyp-aux"))
+        external.add_argument("--public-dir", type=Path, default=Path("state/data/cyp2d6-public"))
+        external.add_argument("--output-dir", type=Path, required=True)
+        if name == "external":
+            external.add_argument("--audit-dir", type=Path, required=True)
     validate = commands.add_parser(
         "validate", help="Check identity, schema and upstream validation"
     )
@@ -62,6 +73,16 @@ def main() -> None:
         from aidd_agent.transfer import run_transfer
 
         result = run_transfer(args.data_dir, args.aux_dir, args.output_dir, neural=args.neural)
+    elif args.command == "audit-external":
+        from aidd_agent.external_transfer import audit_public
+
+        result = audit_public(args.data_dir, args.aux_dir, args.public_dir, args.output_dir)
+    elif args.command == "external":
+        from aidd_agent.external_transfer import run_external
+
+        result = run_external(
+            args.data_dir, args.aux_dir, args.public_dir, args.audit_dir, args.output_dir
+        )
     elif args.command == "submit":
         from aidd_agent.submission import submit_once
 

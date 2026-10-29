@@ -16,6 +16,11 @@
 但未兼顾总体/高活性，**没有提交新结果**，保留确认集。
 见[第三轮结果与未解决的数据缺口](docs/round3-results.md)、[调研依据](docs/round3-research.md)。
 
+第四轮完成NCATS/PubChem与ChEMBL公开CYP2D6低活性审计；保留实验条件、删失关系，
+排除官方分子/骨架重叠后测试来源分离的迁移。固定混合在开发集改善1.30%，未达门槛，
+**不提交，确认集继续封存**。见[第一性原理与来源研究](docs/round4-research.md)、
+[冻结方案](docs/round4-plan.md)、[结果与复现](docs/round4-results.md)。
+
 - [竞赛执行计划与进度](docs/competition-plan.md)
 - [资格、规则与官方来源](docs/cyp-rules.md)
 - [公开方法报告](docs/method-report.md)
