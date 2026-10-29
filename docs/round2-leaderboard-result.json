@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-29T04:06:04.374532+00:00",
+  "status": "scored",
+  "entry": {
+    "rank": 222,
+    "leaderboard_entries": 285,
+    "ma_st_rae": 0.920131143142261,
+    "submitted": "2026-10-29 03:45 UTC",
+    "alias": "aidd-agent",
+    "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+    "leaderboard_scope": "live public regression leaderboard, not final ranking"
+  },
+  "leaderboard_file": "/Users/cylove0330/Documents/tech/mydev/aidd-agent/state/submissions/20261029-round2/leaderboard-downloads/e2c663880ac7c1df647484e9a6611d6a61d8362722132b69112d3ecfd2b2a8b7/regression_leaderboard_mo_rfe8l.csv",
+  "leaderboard_sha256": "e2c663880ac7c1df647484e9a6611d6a61d8362722132b69112d3ecfd2b2a8b7"
+}

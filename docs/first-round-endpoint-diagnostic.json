@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-29T03:54:43.406031+00:00",
+  "scope": "Official live endpoint leaderboards for the first submission, read after round-two selection and upload. Used only for diagnosis, not candidate selection.",
+  "records": [
+    {
+      "endpoint": "CYP1A2",
+      "st_rae": 0.8901088322850899,
+      "mae": 1.0734658705205435,
+      "r2": 0.0831385116411436,
+      "rank": 248,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-28 11:17 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/9e83882/docs/method-report.md",
+      "leaderboard_sha256": "af21ac69e7d1ada87aae4076005cb09922cc3cabf7123931fcc00bcceb5c349e"
+    },
+    {
+      "endpoint": "CYP2C9",
+      "st_rae": 0.6930737097444091,
+      "mae": 0.6184181752577961,
+      "r2": 0.3582139653037781,
+      "rank": 240,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-28 11:17 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/9e83882/docs/method-report.md",
+      "leaderboard_sha256": "85830a2d86d6737abf3d40e5a32939f3b0ee05afba940366284adee2ec7298a9"
+    },
+    {
+      "endpoint": "CYP2D6",
+      "st_rae": 1.4872827524377594,
+      "mae": 1.749200071124668,
+      "r2": -1.023258975077702,
+      "rank": 232,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-28 11:17 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/9e83882/docs/method-report.md",
+      "leaderboard_sha256": "3a6c14698513cfccdcd4ded86f51f62ebe7722d6fe9a0d21901a10c127013fc9"
+    },
+    {
+      "endpoint": "CYP3A4",
+      "st_rae": 0.6435278311444719,
+      "mae": 0.6425199554645007,
+      "r2": 0.5212758650243628,
+      "rank": 198,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-28 11:17 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/9e83882/docs/method-report.md",
+      "leaderboard_sha256": "5dccf81681e6d6a808e5ace268faf453c42cdcc671d795ffdc1bad9aeb0a8f35"
+    }
+  ]
+}

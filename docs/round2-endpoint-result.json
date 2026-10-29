@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-29T04:06:49.535350+00:00",
+  "scope": "Official live endpoint leaderboards for the second submission, for reporting only; no model selection changes.",
+  "records": [
+    {
+      "endpoint": "CYP1A2",
+      "st_rae": 0.9222398439882712,
+      "mae": 1.1262843371680604,
+      "r2": 0.0521937067185304,
+      "rank": 257,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-29 03:45 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+      "leaderboard_sha256": "f08e84832c1e065aa7ee9107b638ee58e4254c9d3ef246011feb545dc4d545e6"
+    },
+    {
+      "endpoint": "CYP2C9",
+      "st_rae": 0.5655422830980769,
+      "mae": 0.5544790321818708,
+      "r2": 0.4911420569104844,
+      "rank": 176,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-29 03:45 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+      "leaderboard_sha256": "ce9ca460d8e70325365ce53a62406d056eef7bb7815ecccaff341ee74c5d94d9"
+    },
+    {
+      "endpoint": "CYP2D6",
+      "st_rae": 1.5723479095598425,
+      "mae": 1.813574707005364,
+      "r2": -1.1002401021548585,
+      "rank": 267,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-29 03:45 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+      "leaderboard_sha256": "fdbeeccaa7a1fee6ab0bc6f894b050483b3b65eec63e11bb7f8fef9e1bc98280"
+    },
+    {
+      "endpoint": "CYP3A4",
+      "st_rae": 0.6203945359228529,
+      "mae": 0.623951048001886,
+      "r2": 0.5512955947768444,
+      "rank": 186,
+      "leaderboard_entries": 285,
+      "submitted": "2026-10-29 03:45 UTC",
+      "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+      "leaderboard_sha256": "6cd03bbaabd011a70f1d57b8c17962dacfe89f79e90408819e1647c8d0d1781c"
+    }
+  ]
+}
