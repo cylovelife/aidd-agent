@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-10-29T03:45:40.532499+00:00",
+  "username": "cylovelife",
+  "alias": "aidd-agent",
+  "anonymous": true,
+  "track": "Regression Prediction",
+  "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+  "file_sha256": "f6b1987532b0d2469e5527f8702d6017f04dc5a65c32cebd6c4f16d50fc49b28",
+  "proprietary_data": false,
+  "open_source_code": true,
+  "publication_opt_in": false,
+  "optional_contact_fields": "not supplied",
+  "responded_at": "2026-10-29T03:45:50.679176+00:00",
+  "status": "received_pending_scoring",
+  "message": "Submission received from 'aidd-agent' for the Regression Prediction track. Your predictions are being processed and should appear on the leaderboard within 2 hours.",
+  "official_score": null
+}
