@@ -10,9 +10,22 @@ import pandas as pd
 import pytest
 
 from aidd_agent.censored_data import load_reviewed_bounds
-from aidd_agent.censored_transfer import fit_candidates, select_censored
+from aidd_agent.censored_transfer import fit_candidates, run_censored, select_censored
 from aidd_agent.sources import sha256_file
 from aidd_agent.transfer_validation import TWO_D6
+
+
+def test_missing_protocol_file_fails_before_creating_run_or_reading_data(tmp_path):
+    output = tmp_path / "run"
+    with pytest.raises(FileNotFoundError):
+        run_censored(
+            tmp_path / "data",
+            tmp_path / "aux",
+            tmp_path / "audit",
+            output,
+            plan_file=tmp_path / "missing-plan.md",
+        )
+    assert not output.exists()
 
 
 def test_primary_bounds_are_hash_locked_and_exclude_all_official_parent_scaffolds(tmp_path):

@@ -1,0 +1,63 @@
+{
+  "audit_date": "2026-10-29",
+  "scope": "20 unique candidates:2 carried ACS,6 curcumin corrections,7 regulatory,5 research; not the entire prior79 ledger",
+  "audit_sha256": "f95634f3194676ae24cde1227e014153ccad2a3af678743fe598c70e788b718a",
+  "reviewed_sha256": "5805bde957cadfe508399533a7228c6d238cfd59d2717e252e624c55e5f4f51f",
+  "admitted_sha256": "7da15d843353e83d5bf4f533934cb9549161f59b722bda348445d32df2ea9a45",
+  "decisions": {
+    "quarantine": 9,
+    "admit_censored": 6,
+    "excluded_global_scaffold": 5
+  },
+  "retained_sources": 3,
+  "retained_parents": 6,
+  "retained_scaffolds": 3,
+  "new_admissions": 4,
+  "new_scaffolds": 2,
+  "official_identity_n": 5656,
+  "primary_evidence_hashes": {
+    "state/sources/round5/locked-audit/audit-lock.json": "7ad667cb1937544a78a357652135a39c655ff31b4f1dd0ff7da26933ebacfd87",
+    "state/sources/round5/locked-audit/admitted.csv": "f3aaf4f9760bc263c860b0c1a24ac5a81c5b5f94baf55a3610466b0c81e8c107",
+    "state/sources/round5/jm0c00101_si_001.pdf": "3b4405c52ccfeca4e5cd78c74990d2422dcc4e449f6bdb8ead17d80d13fe8125",
+    "state/sources/round6/curcumin_audit/root-findings.json": "352613cc1149a9fa50aed6a904034b82f39ef7be32701010904f9429280e7440",
+    "state/sources/round6/curcumin_audit/cached-pdf-read.json": "e92aad7983f313ac9d2a93f35ee2f4e9b3ca90ad18d21be6ad046bdc5ad2ac95",
+    "state/sources/round6/curcumin_visual/findings.json": "de339b4a54a212966e2a8b0fb4c10c92848b913c1ab79464ab2aeaa5682f18e2",
+    "state/sources/round6/regulatory_low_audit/findings.json": "9111055c10fee112b3aa903f69b64774ed845a26ac054429e149a7beb32fd0c4",
+    "state/sources/round6/regulatory_low_audit/pmda-snag.pdf": "e3aee805d2933fb168462678d778ffd9dbe4d636d5de2ccf3ae114864dcbc75f",
+    "state/sources/round6/primary_low_audit/findings.json": "494f80bbd88c5055dea821b2f989b9ea0b939473af160208cfd7b6e92d91cd77",
+    "state/sources/round6/primary_low_audit/pleuromutilin.pdf": "6baaacc926fe2f6d2cc967989c64e1b5151ad036c81c1e74d0bb7da73e79cab4",
+    "state/sources/round6/primary_low_audit/pleuromutilin-si.pdf": "dd47a3f52b52c38e4e8e3c83801a3a011f5832b9f6c4883b0a18520b17bb9f91"
+  },
+  "curcumin": {
+    "primary_author_pdf_url": "https://www.researchgate.net/profile/Regina-Appiah-Opong/publication/5603864_Structure-activity_relationships_for_the_inhibition_of_recombinant_human_cytochromes_P450_by_curcumin_analogues/links/5c2646da92851c22a34b5dd0/Structure-activity-relationships-for-the-inhibition-of-recombinant-human-cytochromes-P450-by-curcumin-analogues.pdf",
+    "parsed_pdf_pages": 11,
+    "actual_pdf_binary_obtained": false,
+    "actual_page_images_received": false,
+    "pdf_binary_sha256": null,
+    "si_obtained": false,
+    "admissions": 0,
+    "reason": "Original visual units/structure/dose and response gaps remain"
+  },
+  "sources": [
+    {
+      "url": "https://ndownloader.figshare.com/files/22477490",
+      "retained": 2,
+      "type": "original SI curves"
+    },
+    {
+      "url": "https://www.pmda.go.jp/drugs/2020/P20200629001/620023000_30200AMX00513_I100_1.pdf",
+      "study": "XT175053",
+      "retained": 3,
+      "type": "primary regulator CTD direct tables and structures",
+      "limitations": "One scaffold family; source-drawn connectivity only; no invented sugar stereo; detailed dose grid/time/temperature not supplied"
+    },
+    {
+      "url": "https://mdpi-res.com/d_attachment/molecules/molecules-21-01488/article_deploy/molecules-21-01488.pdf",
+      "doi": "10.3390/molecules21111488",
+      "retained": 1,
+      "type": "original table/response plot/method",
+      "limitations": "Probe concentration prints10mM and remains disputed; inhibitor concentration range uM independently verified by method/plot; source-native bound only"
+    }
+  ],
+  "semantics": "All six training observations are inequalities with separate regularized source offsets, no new exact official labels"
+}

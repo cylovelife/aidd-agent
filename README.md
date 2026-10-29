@@ -26,6 +26,11 @@
 **不提交，确认集仍未评估**。见[审计、实测与限制](docs/round5-results.md)、
 [拟合前方案](docs/round5-plan.md)、[26个出处的证据锁](docs/round5-evidence-lock.json)。
 
+第六轮继续核验姜黄素原件，新增4条来自两个新骨架家族的来源原生界限，合计6父体/3骨架；
+姜黄素视觉/响应缺口仍未关闭，未准入。固定实验总体改善0.55%、低层恶化4.21%，
+**仍不提交、确认集未评估**。见[原件可得性、准入与实测](docs/round6-results.md)、
+[冻结方案](docs/round6-plan.md)、[证据锁](docs/round6-evidence-lock.json)。
+
 - [竞赛执行计划与进度](docs/competition-plan.md)
 - [资格、规则与官方来源](docs/cyp-rules.md)
 - [公开方法报告](docs/method-report.md)

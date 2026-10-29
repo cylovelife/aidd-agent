@@ -171,9 +171,17 @@ def fixed_other_targets(
     return predictions
 
 
-def run_censored(data_dir: Path, aux_dir: Path, audit_dir: Path, output: Path) -> dict[str, Any]:
+def run_censored(
+    data_dir: Path,
+    aux_dir: Path,
+    audit_dir: Path,
+    output: Path,
+    *,
+    plan_file: Path = Path("docs/round5-plan.md"),
+) -> dict[str, Any]:
     if output.exists():
         raise ValueError("Output directory already exists")
+    plan_digest = sha256_file(plan_file)
     started = time.monotonic()
     data = load_auxiliary(data_dir, aux_dir)
     external, audit = load_reviewed_bounds(
@@ -186,7 +194,8 @@ def run_censored(data_dir: Path, aux_dir: Path, audit_dir: Path, output: Path) -
     protocol = dict(
         created_at=datetime.now(UTC).isoformat(),
         candidates=CANDIDATES,
-        plan_sha256=sha256_file(Path("docs/round5-plan.md")),
+        plan_file=str(plan_file),
+        plan_sha256=plan_digest,
         audit_sha256=audit["audit_sha256"],
         retained_sha256=sha256_file(output / "retained-bounds.csv"),
         sources={str(p): sha256_file(p) for p in sorted(Path("src/aidd_agent").rglob("*.py"))},

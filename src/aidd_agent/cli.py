@@ -51,6 +51,7 @@ def main() -> None:
     censored.add_argument("--aux-dir", type=Path, default=Path("state/data/cyp-aux"))
     censored.add_argument("--audit-dir", type=Path, required=True)
     censored.add_argument("--output-dir", type=Path, required=True)
+    censored.add_argument("--plan-file", type=Path, default=Path("docs/round5-plan.md"))
     validate = commands.add_parser(
         "validate", help="Check identity, schema and upstream validation"
     )
@@ -93,7 +94,13 @@ def main() -> None:
     elif args.command == "censored":
         from aidd_agent.censored_transfer import run_censored
 
-        result = run_censored(args.data_dir, args.aux_dir, args.audit_dir, args.output_dir)
+        result = run_censored(
+            args.data_dir,
+            args.aux_dir,
+            args.audit_dir,
+            args.output_dir,
+            plan_file=args.plan_file,
+        )
     elif args.command == "submit":
         from aidd_agent.submission import submit_once
 
