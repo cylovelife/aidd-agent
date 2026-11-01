@@ -1,0 +1,1622 @@
+{
+  "report": {
+    "selected": {
+      "CYP1A2_pIC50_direct_inhibition": "baseline",
+      "CYP2C9_pIC50_direct_inhibition": "baseline",
+      "CYP2D6_pIC50_direct_inhibition": "baseline",
+      "CYP3A4_pIC50_direct_inhibition": "baseline"
+    },
+    "development_pass": false,
+    "submission_eligible": false,
+    "gate_reasons": [
+      "development_gate_failed"
+    ],
+    "confirmation_opened": false,
+    "fingerprint_seconds": 239.39012612499937,
+    "pretrained_seconds": 30.846192707998853,
+    "peak_rss_bytes": 2420146176,
+    "platform_submission": "not_submitted"
+  },
+  "means": [
+    {
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8281064632594379,
+      "low_distance": 0.7225633630957922,
+      "high_distance": 0.3237429558608932
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.7788366650404143,
+      "low_distance": 0.2191382490060143,
+      "high_distance": 0.221460358922543
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.9326286069156123,
+      "low_distance": 0.8048569377574651,
+      "high_distance": 0.36200269777016575
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.5437674270169554,
+      "low_distance": 0.13360551054893358,
+      "high_distance": 0.366873063059528
+    },
+    {
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 2.9744731357994243,
+      "low_distance": 1.992820459240077,
+      "high_distance": 1.2659095165255043
+    },
+    {
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 1.9836346030751943,
+      "low_distance": 0.44311023626075446,
+      "high_distance": 0.6000033453861878
+    },
+    {
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 2.282228195026701,
+      "low_distance": 1.0509764571382751,
+      "high_distance": 0.9836572242509058
+    },
+    {
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 1.4962966477137767,
+      "low_distance": 0.5649754613765324,
+      "high_distance": 0.9013785759782058
+    },
+    {
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8281064632594379,
+      "low_distance": 0.7225633630957922,
+      "high_distance": 0.3237429558608932
+    },
+    {
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.7783183383383104,
+      "low_distance": 0.2193701732870664,
+      "high_distance": 0.2213137760802996
+    },
+    {
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.933710196221667,
+      "low_distance": 0.801249019906396,
+      "high_distance": 0.363179946767551
+    },
+    {
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.541793398824181,
+      "low_distance": 0.13183096043744566,
+      "high_distance": 0.36623732189494723
+    },
+    {
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8281064632594379,
+      "low_distance": 0.7225633630957922,
+      "high_distance": 0.3237429558608932
+    },
+    {
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.8271033099996355,
+      "low_distance": 0.21717750354687196,
+      "high_distance": 0.2367643765389628
+    },
+    {
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.8947883102175198,
+      "low_distance": 0.7727894808106521,
+      "high_distance": 0.3485285871617698
+    },
+    {
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.545248184117777,
+      "low_distance": 0.15271818247003052,
+      "high_distance": 0.3570693350035941
+    },
+    {
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8281064632594379,
+      "low_distance": 0.7225633630957922,
+      "high_distance": 0.3237429558608932
+    },
+    {
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.7925252826395845,
+      "low_distance": 0.23046398844371307,
+      "high_distance": 0.2240493931917277
+    },
+    {
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.9273274599397179,
+      "low_distance": 0.8101248238297831,
+      "high_distance": 0.3592421680574305
+    },
+    {
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.5679105102103627,
+      "low_distance": 0.14314166059268837,
+      "high_distance": 0.3807138085424297
+    }
+  ],
+  "similarity_strata": [
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 109,
+      "interval_distance": 0.34255343763993323
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 138,
+      "interval_distance": 0.39746063474656496
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.6921372686120651
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 62,
+      "interval_distance": 0.20592296049857153
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 137,
+      "interval_distance": 0.16929029441016574
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.28481903047529517
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 118,
+      "interval_distance": 0.4809316443534246
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 103,
+      "interval_distance": 0.41824238975579325
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 1,
+      "interval_distance": 0.0
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 91,
+      "interval_distance": 0.299702129377367
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 215,
+      "interval_distance": 0.28522365133213096
+    },
+    {
+      "split": "analog_expansion",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 32,
+      "interval_distance": 0.3125698157588358
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 109,
+      "interval_distance": 0.34255343763993323
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 138,
+      "interval_distance": 0.39746063474656496
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.6921372686120651
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 62,
+      "interval_distance": 0.20753198751775606
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 137,
+      "interval_distance": 0.17190841631207426
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.28467118057868407
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 118,
+      "interval_distance": 0.48408561824765495
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 103,
+      "interval_distance": 0.4188609684217095
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 1,
+      "interval_distance": 0.0
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 91,
+      "interval_distance": 0.29717816958808596
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 215,
+      "interval_distance": 0.28618476172866236
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 32,
+      "interval_distance": 0.31058088687779944
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 109,
+      "interval_distance": 0.34255343763993323
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 138,
+      "interval_distance": 0.39746063474656496
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.6921372686120651
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 62,
+      "interval_distance": 0.20294505569087357
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 137,
+      "interval_distance": 0.17615761629888965
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.2540304283124029
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 118,
+      "interval_distance": 0.4691280247127294
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 103,
+      "interval_distance": 0.4220510415886121
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 1,
+      "interval_distance": 0.0
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 91,
+      "interval_distance": 0.29616901136014306
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 215,
+      "interval_distance": 0.3060654662955289
+    },
+    {
+      "split": "analog_expansion",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 32,
+      "interval_distance": 0.311393642819236
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 109,
+      "interval_distance": 0.34255343763993323
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 138,
+      "interval_distance": 0.39746063474656496
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.6921372686120651
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 62,
+      "interval_distance": 0.2679238719950881
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 137,
+      "interval_distance": 0.17867938980964
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.3379079932753517
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 118,
+      "interval_distance": 0.473008110369821
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 103,
+      "interval_distance": 0.4272378008243922
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 1,
+      "interval_distance": 0.0761554005368037
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 91,
+      "interval_distance": 0.28761734891359453
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 215,
+      "interval_distance": 0.2917305300318158
+    },
+    {
+      "split": "analog_expansion",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 32,
+      "interval_distance": 0.29179481669060603
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 109,
+      "interval_distance": 0.7781744377840633
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 138,
+      "interval_distance": 0.9874656840744064
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 1.153984414976086
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 62,
+      "interval_distance": 0.5377314135462107
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 137,
+      "interval_distance": 0.39660660312727025
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.7329311197379015
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 118,
+      "interval_distance": 0.8602136713176056
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 103,
+      "interval_distance": 0.9641083835679621
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 1,
+      "interval_distance": 0.6635842876835283
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 91,
+      "interval_distance": 0.6305110990922941
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 215,
+      "interval_distance": 0.6266972382338533
+    },
+    {
+      "split": "analog_expansion",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 32,
+      "interval_distance": 0.562515928211514
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 94,
+      "interval_distance": 0.4168089997713046
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 117,
+      "interval_distance": 0.42212645869056004
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.6788032337030279
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 59,
+      "interval_distance": 0.2295309047338574
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 157,
+      "interval_distance": 0.24065633140855608
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 2,
+      "interval_distance": 0.20769142710068156
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 147,
+      "interval_distance": 0.39595843667104935
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 85,
+      "interval_distance": 0.3336765240081796
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.3942268253112491
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 87,
+      "interval_distance": 0.25115243062704573
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 233,
+      "interval_distance": 0.27075201919428776
+    },
+    {
+      "split": "scaffold_73",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 38,
+      "interval_distance": 0.32493770674326683
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 94,
+      "interval_distance": 0.4168089997713046
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 117,
+      "interval_distance": 0.42212645869056004
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.6788032337030279
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 59,
+      "interval_distance": 0.22638252594700106
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 157,
+      "interval_distance": 0.24149121962572906
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 2,
+      "interval_distance": 0.20787957145374225
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 147,
+      "interval_distance": 0.39521024498793306
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 85,
+      "interval_distance": 0.33957631245472697
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.38839197324165964
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 87,
+      "interval_distance": 0.24582984579426337
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 233,
+      "interval_distance": 0.27392324027546766
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 38,
+      "interval_distance": 0.3142794228431165
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 94,
+      "interval_distance": 0.4168089997713046
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 117,
+      "interval_distance": 0.42212645869056004
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.6788032337030279
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 59,
+      "interval_distance": 0.23227657187672032
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 157,
+      "interval_distance": 0.24863479660502016
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 2,
+      "interval_distance": 0.14712434942621666
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 147,
+      "interval_distance": 0.39657992731476416
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 85,
+      "interval_distance": 0.3289757163549732
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.3115263463619211
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 87,
+      "interval_distance": 0.2744558151491483
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 233,
+      "interval_distance": 0.28709181516861243
+    },
+    {
+      "split": "scaffold_73",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 38,
+      "interval_distance": 0.33107643172217477
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 94,
+      "interval_distance": 0.4168089997713046
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 117,
+      "interval_distance": 0.42212645869056004
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.6788032337030279
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 59,
+      "interval_distance": 0.2570101284386546
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 157,
+      "interval_distance": 0.24370628148755522
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 2,
+      "interval_distance": 0.11271365694125368
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 147,
+      "interval_distance": 0.35693673708150253
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 85,
+      "interval_distance": 0.3520922726556982
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.2956321987374728
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 87,
+      "interval_distance": 0.2717476979288244
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 233,
+      "interval_distance": 0.2726826076346303
+    },
+    {
+      "split": "scaffold_73",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 38,
+      "interval_distance": 0.27181859819372606
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 94,
+      "interval_distance": 1.6856557351712196
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 117,
+      "interval_distance": 0.9564924391670235
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 1.1108216239650524
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 59,
+      "interval_distance": 1.3398338557878438
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 157,
+      "interval_distance": 0.4366383960559733
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 2,
+      "interval_distance": 0.5756425053416843
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 147,
+      "interval_distance": 1.0045315435225237
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 85,
+      "interval_distance": 0.7225447233176736
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 4,
+      "interval_distance": 0.6777016373930593
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 87,
+      "interval_distance": 0.5614309268589894
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 233,
+      "interval_distance": 0.5993351028166569
+    },
+    {
+      "split": "scaffold_73",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 38,
+      "interval_distance": 2.345137874236164
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 107,
+      "interval_distance": 0.3242263825184827
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 106,
+      "interval_distance": 0.3994245498495207
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.11662039321041177
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 49,
+      "interval_distance": 0.26912782679943126
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 139,
+      "interval_distance": 0.23490855573534966
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.23474304108812483
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 144,
+      "interval_distance": 0.45248195287623855
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 82,
+      "interval_distance": 0.3097574063331513
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.47257799925338884
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 102,
+      "interval_distance": 0.2711003442999485
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 240,
+      "interval_distance": 0.2806738329343837
+    },
+    {
+      "split": "scaffold_74",
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 25,
+      "interval_distance": 0.3320164476836702
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 107,
+      "interval_distance": 0.3242263825184827
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 106,
+      "interval_distance": 0.3994245498495207
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.11662039321041177
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 49,
+      "interval_distance": 0.2691303195563643
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 139,
+      "interval_distance": 0.23130146057699255
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.2106001014907264
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 144,
+      "interval_distance": 0.4501826059516118
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 82,
+      "interval_distance": 0.3088893237222093
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.46575635835457974
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 102,
+      "interval_distance": 0.27036797888923686
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 240,
+      "interval_distance": 0.277790103077547
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chiral_r2",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 25,
+      "interval_distance": 0.3267598510042836
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 107,
+      "interval_distance": 0.3242263825184827
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 106,
+      "interval_distance": 0.3994245498495207
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.11662039321041177
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 49,
+      "interval_distance": 0.2701028621615454
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 139,
+      "interval_distance": 0.23891629007236534
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.19722383853636405
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 144,
+      "interval_distance": 0.44734666276447993
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 82,
+      "interval_distance": 0.32131171354744725
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.42846377082534925
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 102,
+      "interval_distance": 0.26882212956205864
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 240,
+      "interval_distance": 0.29128725517552617
+    },
+    {
+      "split": "scaffold_74",
+      "model": "radius3",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 25,
+      "interval_distance": 0.363235895831443
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 107,
+      "interval_distance": 0.3242263825184827
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 106,
+      "interval_distance": 0.3994245498495207
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.11662039321041177
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 49,
+      "interval_distance": 0.2937777809011597
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 139,
+      "interval_distance": 0.22826023909779763
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.28547702846895184
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 144,
+      "interval_distance": 0.41241447438305834
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 82,
+      "interval_distance": 0.3035345204646108
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.45187377939325063
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 102,
+      "interval_distance": 0.2808906683490998
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 240,
+      "interval_distance": 0.2862589117328762
+    },
+    {
+      "split": "scaffold_74",
+      "model": "feature_morgan",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 25,
+      "interval_distance": 0.27910271109374923
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 107,
+      "interval_distance": 2.7135458882546364
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 106,
+      "interval_distance": 1.3394574275532705
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.42027895594632503
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 49,
+      "interval_distance": 0.7863970929905557
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 139,
+      "interval_distance": 0.5059803228252371
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 3,
+      "interval_distance": 0.21511279527412283
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 144,
+      "interval_distance": 1.2041023859493796
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 82,
+      "interval_distance": 1.1139923009867836
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 5,
+      "interval_distance": 0.7867201963635011
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_lt_0.4",
+      "n": 102,
+      "interval_distance": 1.3777271522320598
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_0.4_to_0.6",
+      "n": 240,
+      "interval_distance": 0.7624151494548318
+    },
+    {
+      "split": "scaffold_74",
+      "model": "chemeleon",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "stratum": "similarity_ge_0.6",
+      "n": 25,
+      "interval_distance": 0.7034349706747662
+    }
+  ],
+  "reconciliation_max_abs_error": 8.881784197001252e-16,
+  "confirmation_partition_sha256": "f9fa599c6d3f9536aa1d6c4e7cef9ea47f6159fba03950f994be34a3abb6104a",
+  "artifacts_sha256": {
+    "analog_expansion-chemeleon-predictions.csv": "89565406b8c7a47140aac34417379cff71e2792800318c1b6e739b6fa51dfc11",
+    "analog_expansion-predictions.csv": "30ecca973366b6ccab2b147e9da3aa5de51232452b3e6db2d773bd6cfd12e183",
+    "confirmation-lock.json": "b6fa23eba264bc343cb534e813afd45608a4564fb8c2a15e084e575bd3c423e7",
+    "confirmation-split.csv": "f9fa599c6d3f9536aa1d6c4e7cef9ea47f6159fba03950f994be34a3abb6104a",
+    "development-audit.json": "89406a558dde0d3bee2395ec93ccf34385f50f17d84318e53deaa3488aadba96",
+    "development-splits.csv": "666fa827a9ac7911703851c4db011440006b7cb5234666eda8d4f29ee3592c7a",
+    "development-validation.csv": "e84674dde738607242ed737d46fd14a376ea5a9b7c20a3fa22fbd854966dfc4f",
+    "protocol.json": "ef49b49d3c6f7aad34d0b4837f9efc0f164aa1c1bd702c5fc8ec0681658768e2",
+    "report.json": "550eaa5e67bdf350d6bf2567d5cbeed041d975c34a69aa71c7c536e842fa320b",
+    "scaffold_73-chemeleon-predictions.csv": "e5582677e164f422f918ecb1287e10d7f40c1cc91c50ae3822cfc87f264bcff3",
+    "scaffold_73-predictions.csv": "b2ec43c7aabec9ce8cba668677d3fe01954cc66fe011d51f8594764ec8b1e17e",
+    "scaffold_74-chemeleon-predictions.csv": "31569cb61e60ca6402c452d9099133970469c28f1057b58882f73443030a4af3",
+    "scaffold_74-predictions.csv": "d81307e9a3bf4eef95b0acc6c4aa2181bb96ef1adf46f4b0dd8988dddbd7373a",
+    "selection.json": "5847d46ea5522328fb4db2b36e4743b9d7f465fb58a8ac91e2d72b9603aeb350"
+  }
+}

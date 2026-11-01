@@ -1,0 +1,13 @@
+{
+  "record": "https://zenodo.org/records/15460715",
+  "file_url": "https://zenodo.org/records/15460715/files/chemeleon_mp.pt",
+  "md5": "6a80b54fdb7de37ef0374d302f01e8ce",
+  "sha256": "c376624d3407204e780a0ed13a9ac097cc9bb1c13ef89cdbc633c1715c183651",
+  "size_bytes": 34859448,
+  "license": "MIT (Zenodo record metadata and upstream LICENSE)",
+  "encoder": "frozen Chemprop BondMessagePassing + MeanAggregation",
+  "chemprop": "2.2.1",
+  "pretraining": "PubChem molecular structures and descriptor supervision; no CYP activity labels used in this run",
+  "pretraining_molecule_overlap": "not audited; possible structure overlap is disclosed",
+  "local_uploads": false
+}

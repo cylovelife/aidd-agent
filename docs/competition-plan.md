@@ -107,3 +107,12 @@ compound3的4条来源原生界限（2新骨架家族），合并为6父体/3来
 5656结构排除通过；不混同直接/TDI或外推精确值。[方案](round6-plan.md)、
 [证据锁](round6-evidence-lock.json)、[实测](round6-results.md)已留档。固定协议总体改善
 0.546%、低层恶化4.208%，未通过门槛；**不提交，确认集未评估，没有盲测CSV**。
+
+## 第七轮：指纹表示消融与冻结预训练对照（2026-11-01）
+
+用户授权按固定验证执行指纹消融、再增加一个预训练表示对照，有可信提升才提交。
+[拟合前方案](round7-plan.md)和[来源锁](round7-sources-lock.json)冻结后，完成
+baseline/手性/radius3/Feature Morgan/CheMeleon五候选、三开发切分、四终点共60项
+评估。[实测结果](round7-results.md)：Feature Morgan的2D6总体改善4.06%，低层仅
+改善3.98%，未达10%门槛；冻结CheMeleon+Ridge明显退步。最终均保留基线，
+**本轮未提交、963分子确认集未评估、未生成盲测CSV**；第二轮提交未被替换。

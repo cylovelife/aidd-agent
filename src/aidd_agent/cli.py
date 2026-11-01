@@ -52,6 +52,11 @@ def main() -> None:
     censored.add_argument("--audit-dir", type=Path, required=True)
     censored.add_argument("--output-dir", type=Path, required=True)
     censored.add_argument("--plan-file", type=Path, default=Path("docs/round5-plan.md"))
+    representation = commands.add_parser("representation", help="Run frozen round-seven ablations")
+    representation.add_argument("--data-dir", type=Path, default=Path("state/data/cyp"))
+    representation.add_argument("--aux-dir", type=Path, default=Path("state/data/cyp-aux"))
+    representation.add_argument("--output-dir", type=Path, required=True)
+    representation.add_argument("--weights", type=Path, required=True)
     validate = commands.add_parser(
         "validate", help="Check identity, schema and upstream validation"
     )
@@ -101,6 +106,10 @@ def main() -> None:
             args.output_dir,
             plan_file=args.plan_file,
         )
+    elif args.command == "representation":
+        from aidd_agent.representation import run_representation
+
+        result = run_representation(args.data_dir, args.aux_dir, args.output_dir, args.weights)
     elif args.command == "submit":
         from aidd_agent.submission import submit_once
 
