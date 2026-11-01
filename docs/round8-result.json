@@ -1,0 +1,202 @@
+{
+  "report": {
+    "selected": {
+      "CYP1A2_pIC50_direct_inhibition": "baseline",
+      "CYP2C9_pIC50_direct_inhibition": "baseline",
+      "CYP2D6_pIC50_direct_inhibition": "baseline",
+      "CYP3A4_pIC50_direct_inhibition": "baseline"
+    },
+    "development_pass": false,
+    "submission_eligible": false,
+    "gate_reasons": [
+      "development_gate_failed"
+    ],
+    "confirmation_opened": false,
+    "elapsed_seconds": 4.133478750001814,
+    "platform_submission": "not_submitted"
+  },
+  "provenance": {
+    "embedding_sha256": "0bb3978c08784da52e0e1d2fdc1d6a4fa3bd66a5dc33494e8058995576bc9669",
+    "embedding_metadata_sha256": "c9509c2675a090dabeda0bac64d6f759bc9ebf4dad8af8eb9c9bacb949c28384",
+    "source_run_protocol_sha256": "ef49b49d3c6f7aad34d0b4837f9efc0f164aa1c1bd702c5fc8ec0681658768e2",
+    "development_splits_sha256": "666fa827a9ac7911703851c4db011440006b7cb5234666eda8d4f29ee3592c7a",
+    "confirmation_sha256": "f9fa599c6d3f9536aa1d6c4e7cef9ea47f6159fba03950f994be34a3abb6104a"
+  },
+  "means": [
+    {
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8281064632594379,
+      "low_distance": 0.7225633630957922,
+      "high_distance": 0.3237429558608932
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.7788366650404143,
+      "low_distance": 0.2191382490060143,
+      "high_distance": 0.221460358922543
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.9326286069156123,
+      "low_distance": 0.8048569377574651,
+      "high_distance": 0.36200269777016575
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.5437674270169554,
+      "low_distance": 0.13360551054893358,
+      "high_distance": 0.366873063059528
+    },
+    {
+      "model": "clip5_ridge10",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 1.57558735672023,
+      "low_distance": 0.6319915008404129,
+      "high_distance": 0.7530311942880393
+    },
+    {
+      "model": "clip5_ridge10",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 1.4140730148351086,
+      "low_distance": 0.3426242736750826,
+      "high_distance": 0.4107634780627371
+    },
+    {
+      "model": "clip5_ridge10",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 1.8374949328613035,
+      "low_distance": 0.7590360703678721,
+      "high_distance": 0.7973715291303817
+    },
+    {
+      "model": "clip5_ridge10",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 1.1205476101649101,
+      "low_distance": 0.3724023149374398,
+      "high_distance": 0.7026275834636365
+    },
+    {
+      "model": "clip5_ridge1000",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.9025495881260772,
+      "low_distance": 0.5817315322990099,
+      "high_distance": 0.39199934801992975
+    },
+    {
+      "model": "clip5_ridge1000",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.7752442046146685,
+      "low_distance": 0.19711773679327083,
+      "high_distance": 0.22142885280582061
+    },
+    {
+      "model": "clip5_ridge1000",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.9785704605359222,
+      "low_distance": 0.6514126368035825,
+      "high_distance": 0.402163193937548
+    },
+    {
+      "model": "clip5_ridge1000",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.6076938152422657,
+      "low_distance": 0.14468659887713786,
+      "high_distance": 0.4101819700820175
+    },
+    {
+      "model": "replay",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 2.9744731357994243,
+      "low_distance": 1.992820459240077,
+      "high_distance": 1.2659095165255043
+    },
+    {
+      "model": "replay",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 1.9836346030751943,
+      "low_distance": 0.44311023626075446,
+      "high_distance": 0.6000033453861878
+    },
+    {
+      "model": "replay",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 2.282228195026701,
+      "low_distance": 1.0509764571382751,
+      "high_distance": 0.9836572242509058
+    },
+    {
+      "model": "replay",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 1.4962966477137767,
+      "low_distance": 0.5649754613765324,
+      "high_distance": 0.9013785759782058
+    },
+    {
+      "model": "ridge1000",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 1.2797026195013208,
+      "low_distance": 0.87311786485495,
+      "high_distance": 0.5403217212742887
+    },
+    {
+      "model": "ridge1000",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.8885180681266546,
+      "low_distance": 0.2152632478418903,
+      "high_distance": 0.2602413746765005
+    },
+    {
+      "model": "ridge1000",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 1.0808865540145225,
+      "low_distance": 0.6883929324211809,
+      "high_distance": 0.44604329002214627
+    },
+    {
+      "model": "ridge1000",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.6949925302756766,
+      "low_distance": 0.20823916123620498,
+      "high_distance": 0.446011210145196
+    }
+  ],
+  "macro_st_rae": {
+    "baseline": 0.770834790558105,
+    "clip5_ridge10": 1.486925728645388,
+    "clip5_ridge1000": 0.8160145171297334,
+    "replay": 2.184158145403774,
+    "ridge1000": 0.9860249429795437
+  },
+  "max_reconciliation_error": 8.881784197001252e-16,
+  "old_artifacts_unchanged": true,
+  "source_and_plan_hashes_match": true,
+  "confirmation_opened": false,
+  "blind_csv_exists": false,
+  "artifacts_sha256": {
+    "analog_expansion-predictions.csv": "dfeb6fa95bacca030ee6a6c78ada697ea1f12849930edec99bec5f01dcb4a481",
+    "development-validation.csv": "bd83f4a8600030d5f724f4c39b3317cafc68fd7653a92802ba31495211615067",
+    "protocol.json": "51a178cba98109f3030c324b51baaa6731d841136119962f708ce61b4e4d97c0",
+    "report.json": "ed6a8aefa2acadd6b6c68938491c46f9ac521510a0dd6259388c7577c9fc15d3",
+    "scaffold_73-predictions.csv": "0be436b88489b44d7394570346ee3645dd260d8a19c5fd2c45dab8e44b671fbc",
+    "scaffold_74-predictions.csv": "60c9edc18daabe0bc9940a3a8c1d6f5b8bc62d417c40cae85c948a078acbffa8",
+    "selection.json": "d200b0b4cb84db07fb5c11f46e1a855ab993f1c6eb45e57ecdc3b612a2151a78",
+    "training-diagnostics.json": "42fc7f29edc4d3702694e514a11d3228795f258cb491464e825509aaf20482a2"
+  },
+  "diagnostic_protocol": {
+    "embedding_sha256": "0bb3978c08784da52e0e1d2fdc1d6a4fa3bd66a5dc33494e8058995576bc9669",
+    "embedding_metadata_sha256": "c9509c2675a090dabeda0bac64d6f759bc9ebf4dad8af8eb9c9bacb949c28384",
+    "source_run_protocol_sha256": "ef49b49d3c6f7aad34d0b4837f9efc0f164aa1c1bd702c5fc8ec0681658768e2",
+    "development_splits_sha256": "666fa827a9ac7911703851c4db011440006b7cb5234666eda8d4f29ee3592c7a",
+    "confirmation_sha256": "f9fa599c6d3f9536aa1d6c4e7cef9ea47f6159fba03950f994be34a3abb6104a",
+    "plan_sha256": "7a1a5437e919160ab93a6bda8512b9486f37601d7365adaf8a1bf5b814469d4c",
+    "source_sha256": "91b1005c8161b122c57cfad4ec62504c73d278ff7918657641c458e99d80bd1d",
+    "uv_lock_sha256": "804b8bd4fa2c59d8977bfdda75c5fa28bdaccaa9cbce11d1e02fcb4b0e82d632",
+    "diagnosis_only": true,
+    "new_candidate_fits": 0
+  },
+  "diagnostic_report_sha256": "121a1380b461fb902095098ebd2311f999f1b2ef201e5bb89b29317896310a2d"
+}
