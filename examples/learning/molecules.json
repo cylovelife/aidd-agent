@@ -1,0 +1,22 @@
+[
+  {"id": "ethanol", "smiles": "CCO"},
+  {"id": "ethanol_reverse", "smiles": "OCC"},
+  {"id": "dimethyl_ether", "smiles": "COC"},
+  {"id": "methanol", "smiles": "CO"},
+  {"id": "propanol", "smiles": "CCCO"},
+  {"id": "acetic_acid", "smiles": "CC(=O)O"},
+  {"id": "acetate", "smiles": "CC(=O)[O-]"},
+  {"id": "sodium_acetate", "smiles": "CC(=O)[O-].[Na+]"},
+  {"id": "benzene", "smiles": "c1ccccc1"},
+  {"id": "benzene_kekule", "smiles": "C1=CC=CC=C1"},
+  {"id": "toluene", "smiles": "Cc1ccccc1"},
+  {"id": "phenol", "smiles": "Oc1ccccc1"},
+  {"id": "aniline", "smiles": "Nc1ccccc1"},
+  {"id": "cyclohexane", "smiles": "C1CCCCC1"},
+  {"id": "pyridine", "smiles": "c1ccncc1"},
+  {"id": "lactic_stereo_a", "smiles": "C[C@H](O)C(=O)O"},
+  {"id": "lactic_stereo_b", "smiles": "C[C@@H](O)C(=O)O"},
+  {"id": "lactic_unspecified", "smiles": "CC(O)C(=O)O"},
+  {"id": "invalid_ring", "smiles": "C1CC"},
+  {"id": "empty", "smiles": ""}
+]

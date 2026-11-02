@@ -1,0 +1,94 @@
+{
+  "20261102-checkup-02": {
+    "rdkit_version": "2026.09.1",
+    "input_count": 20,
+    "valid_count": 18,
+    "invalid_count": 2,
+    "duplicate_identity_groups": [
+      [
+        "ethanol",
+        "ethanol_reverse"
+      ],
+      [
+        "benzene",
+        "benzene_kekule"
+      ]
+    ],
+    "fingerprint": {
+      "radius": 2,
+      "bits": 2048,
+      "include_chirality": false
+    },
+    "input_sha256": "898bab6c0bdb4e0a69dc3c1cbc68d20c59e52a921c942d2458989d041e8bbb26",
+    "source_sha256": "ce75a393a59bcc8f40e098c6a1a77ef56e269eaf9edb3429d24eff2140af1883",
+    "artifact_sha256": {
+      "index.html": "f1e157d41bf2a06bbadae7766adf4dd965d213fc7e253972d977a547d36a53e7",
+      "molecule-000.svg": "6b01cb901d581744e1dff7bf025c57293ed91a8dce08a38d4d79818c2ca6ee90",
+      "molecule-001.svg": "626ff4014e7e82df19b90b9742287f7174191c7d5f54baecbd10a0de76211c09",
+      "molecule-002.svg": "a8a935094f8940ce395802a0bf72d44960d513a88f6e5d44ebf303bd20662f44",
+      "molecule-003.svg": "1cb85b26ab66973890af3ac2f9da9369f0bdc0ac92cc63ecc81c7586184b1e14",
+      "molecule-004.svg": "1b833a897a38fde38cf1862f9fdf8bdc89aa7902f2b5229edace29e4a9e7cdfa",
+      "molecule-005.svg": "a23134a19e0592b45251764fcf800211e361ddb9c0f5d58db5ff9132f7314cdc",
+      "molecule-006.svg": "b210d0f46851ac998fc1deede661eee0291f9ecdc904ffaa33c34fb09f14a381",
+      "molecule-007.svg": "953ef887029d07a3cfa86db5976ee28f981287fa3278765f8166058259a14f9b",
+      "molecule-008.svg": "ed5a073ef00dc20dedb00f9b8c279e078a2ced6bb1dcc86031016c317e244677",
+      "molecule-009.svg": "ed5a073ef00dc20dedb00f9b8c279e078a2ced6bb1dcc86031016c317e244677",
+      "molecule-010.svg": "e36441a7debf456e838ec0605ae74cb5dc494f90b57ab043e643209ab6ad54f9",
+      "molecule-011.svg": "12eb1e312b8d71bfec3610dfd00d12509031dbefb36b4203788a919e8f08dd16",
+      "molecule-012.svg": "9340e86de64fe992a49579c04975183b4e2f20da9946de2b4a0588e4014bd53b",
+      "molecule-013.svg": "2c029a7a3f9656cc70b72d7e8bf7e6fbc92c8353db033e8b6e69d52019ee7145",
+      "molecule-014.svg": "1cc7f4e62f2f45a691e473c23992deb67622ef74e7b65d23b6ed4af7fb6bbf46",
+      "molecule-015.svg": "c2285e16501ca847574265751ae7c7311eb1bdc12e4843725c5cb5b03af2073a",
+      "molecule-016.svg": "728aa10e4252d6705405de150963c047796e46ac1a6d64a1b8c5e37a53170273",
+      "molecule-017.svg": "8dedff830ed3e851e4eccdc1b2130431a941eff0366dbbdb0cd7a5c192b7859a",
+      "molecules.json": "98eb0abff0ede18177d0c4862621bb08c4edee51420e5554234fec4a32a258c8",
+      "structures.png": "3915ab1bdc1befc658984f5e742f1ef576a3c0c4ec20ffbdb4dd1d7e74def367"
+    }
+  },
+  "20261102-checkup-chiral-02": {
+    "rdkit_version": "2026.09.1",
+    "input_count": 20,
+    "valid_count": 18,
+    "invalid_count": 2,
+    "duplicate_identity_groups": [
+      [
+        "ethanol",
+        "ethanol_reverse"
+      ],
+      [
+        "benzene",
+        "benzene_kekule"
+      ]
+    ],
+    "fingerprint": {
+      "radius": 2,
+      "bits": 2048,
+      "include_chirality": true
+    },
+    "input_sha256": "898bab6c0bdb4e0a69dc3c1cbc68d20c59e52a921c942d2458989d041e8bbb26",
+    "source_sha256": "ce75a393a59bcc8f40e098c6a1a77ef56e269eaf9edb3429d24eff2140af1883",
+    "artifact_sha256": {
+      "index.html": "d6f1dc73d14846af5734ff2ef44c57d550a59acfe01f4b6d3a32284a65c94d11",
+      "molecule-000.svg": "6b01cb901d581744e1dff7bf025c57293ed91a8dce08a38d4d79818c2ca6ee90",
+      "molecule-001.svg": "626ff4014e7e82df19b90b9742287f7174191c7d5f54baecbd10a0de76211c09",
+      "molecule-002.svg": "a8a935094f8940ce395802a0bf72d44960d513a88f6e5d44ebf303bd20662f44",
+      "molecule-003.svg": "1cb85b26ab66973890af3ac2f9da9369f0bdc0ac92cc63ecc81c7586184b1e14",
+      "molecule-004.svg": "1b833a897a38fde38cf1862f9fdf8bdc89aa7902f2b5229edace29e4a9e7cdfa",
+      "molecule-005.svg": "a23134a19e0592b45251764fcf800211e361ddb9c0f5d58db5ff9132f7314cdc",
+      "molecule-006.svg": "b210d0f46851ac998fc1deede661eee0291f9ecdc904ffaa33c34fb09f14a381",
+      "molecule-007.svg": "953ef887029d07a3cfa86db5976ee28f981287fa3278765f8166058259a14f9b",
+      "molecule-008.svg": "ed5a073ef00dc20dedb00f9b8c279e078a2ced6bb1dcc86031016c317e244677",
+      "molecule-009.svg": "ed5a073ef00dc20dedb00f9b8c279e078a2ced6bb1dcc86031016c317e244677",
+      "molecule-010.svg": "e36441a7debf456e838ec0605ae74cb5dc494f90b57ab043e643209ab6ad54f9",
+      "molecule-011.svg": "12eb1e312b8d71bfec3610dfd00d12509031dbefb36b4203788a919e8f08dd16",
+      "molecule-012.svg": "9340e86de64fe992a49579c04975183b4e2f20da9946de2b4a0588e4014bd53b",
+      "molecule-013.svg": "2c029a7a3f9656cc70b72d7e8bf7e6fbc92c8353db033e8b6e69d52019ee7145",
+      "molecule-014.svg": "1cc7f4e62f2f45a691e473c23992deb67622ef74e7b65d23b6ed4af7fb6bbf46",
+      "molecule-015.svg": "c2285e16501ca847574265751ae7c7311eb1bdc12e4843725c5cb5b03af2073a",
+      "molecule-016.svg": "728aa10e4252d6705405de150963c047796e46ac1a6d64a1b8c5e37a53170273",
+      "molecule-017.svg": "8dedff830ed3e851e4eccdc1b2130431a941eff0366dbbdb0cd7a5c192b7859a",
+      "molecules.json": "41b27d636ab12235d0b543560577c7e8fbc1e5adc09652846f021cc097295c76",
+      "structures.png": "3915ab1bdc1befc658984f5e742f1ef576a3c0c4ec20ffbdb4dd1d7e74def367"
+    }
+  }
+}

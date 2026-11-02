@@ -5,6 +5,7 @@
 - Independent personal AIDD competition project. First task: OpenADMET CYP Direct Inhibition regression; execution order and actual status live in `docs/competition-plan.md`.
 - Official source links and audited participation/submission constraints live in `docs/cyp-rules.md`. Pin dataset and tutorial revisions in each run; recheck rules before external submission.
 - `pyproject.toml` and `uv.lock` define the Python environment; implementation uses `src/aidd_agent/`, tests use `tests/`. No dependency on quant-agent code, data or accounts.
+- The post-competition learning route lives in `docs/learning-plan.md`. The independent molecular checkup entry is `scripts/run_molecular_checkup.py`; lessons and engineering/learner acceptance are separate under `docs/learning/`. Preserve all CYP artifacts and protocols; learning work does not reopen competition fitting or submissions. ESOL fitting requires the source/split/resource lock described in the learning plan.
 
 ## Research invariants
 

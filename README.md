@@ -2,6 +2,14 @@
 
 个人 AIDD 学习与竞赛工程。首个任务是 OpenADMET CYP 2026 的药物代谢酶直接抑制活性预测，目标是在截止前完成一次有效盲测提交。
 
+当前学习实践：[分子体检与ESOL任务/验收](docs/learning-plan.md)、
+[第一课：从SMILES看见分子](docs/learning/01-molecular-checkup.md)。
+先运行本地工具并解释输出，再逐步进入ESOL，个人学习验收单独记录。
+
+```bash
+uv run python scripts/run_molecular_checkup.py --output state/learning/my-checkup
+```
+
 **此次参赛研究已收尾**：最后一轮冻结神经头与有限编码器微调均未通过原门槛，
 保留已有最佳已评分提交。完整过程、数据与验证限制见
 [参赛技术总结](docs/cyp-competition-retrospective.md)，本轮实测见
