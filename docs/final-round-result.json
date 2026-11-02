@@ -1,0 +1,169 @@
+{
+  "report": {
+    "selected": {
+      "CYP1A2_pIC50_direct_inhibition": "baseline",
+      "CYP2C9_pIC50_direct_inhibition": "baseline",
+      "CYP2D6_pIC50_direct_inhibition": "baseline",
+      "CYP3A4_pIC50_direct_inhibition": "baseline"
+    },
+    "development_pass": false,
+    "submission_eligible": false,
+    "gate_reasons": [
+      "development_gate_failed"
+    ],
+    "confirmation_opened": false,
+    "elapsed_seconds": 983.857748125,
+    "peak_rss_bytes": 1163870208,
+    "platform_submission": "not_submitted"
+  },
+  "provenance": {
+    "embedding_sha256": "0bb3978c08784da52e0e1d2fdc1d6a4fa3bd66a5dc33494e8058995576bc9669",
+    "embedding_metadata_sha256": "c9509c2675a090dabeda0bac64d6f759bc9ebf4dad8af8eb9c9bacb949c28384",
+    "source_run_protocol_sha256": "ef49b49d3c6f7aad34d0b4837f9efc0f164aa1c1bd702c5fc8ec0681658768e2",
+    "development_splits_sha256": "666fa827a9ac7911703851c4db011440006b7cb5234666eda8d4f29ee3592c7a",
+    "confirmation_sha256": "f9fa599c6d3f9536aa1d6c4e7cef9ea47f6159fba03950f994be34a3abb6104a"
+  },
+  "means": [
+    {
+      "model": "baseline",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8281064632594379,
+      "low_distance": 0.7225633630957922,
+      "high_distance": 0.3237429558608932
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.7788366650404143,
+      "low_distance": 0.2191382490060143,
+      "high_distance": 0.221460358922543
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.9326286069156123,
+      "low_distance": 0.8048569377574651,
+      "high_distance": 0.36200269777016575
+    },
+    {
+      "model": "baseline",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.5437674270169554,
+      "low_distance": 0.13360551054893358,
+      "high_distance": 0.366873063059528
+    },
+    {
+      "model": "frozen_head",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8425925069649938,
+      "low_distance": 0.7041914528406207,
+      "high_distance": 0.3322217949276818
+    },
+    {
+      "model": "frozen_head",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.7596633886604457,
+      "low_distance": 0.1911950684804591,
+      "high_distance": 0.21792067052982875
+    },
+    {
+      "model": "frozen_head",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.9249800080424239,
+      "low_distance": 0.8155313620720402,
+      "high_distance": 0.3626884892703406
+    },
+    {
+      "model": "frozen_head",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.5839839388046669,
+      "low_distance": 0.22167108121672663,
+      "high_distance": 0.3496452961173752
+    },
+    {
+      "model": "partial_tune",
+      "endpoint": "CYP1A2_pIC50_direct_inhibition",
+      "st_rae": 0.8312698327745438,
+      "low_distance": 0.6035931513008048,
+      "high_distance": 0.35078164886126456
+    },
+    {
+      "model": "partial_tune",
+      "endpoint": "CYP2C9_pIC50_direct_inhibition",
+      "st_rae": 0.8096556391696862,
+      "low_distance": 0.2140639654871405,
+      "high_distance": 0.22927701078395368
+    },
+    {
+      "model": "partial_tune",
+      "endpoint": "CYP2D6_pIC50_direct_inhibition",
+      "st_rae": 0.9461121272059341,
+      "low_distance": 0.7187485917149768,
+      "high_distance": 0.38203458426180187
+    },
+    {
+      "model": "partial_tune",
+      "endpoint": "CYP3A4_pIC50_direct_inhibition",
+      "st_rae": 0.6010030759136891,
+      "low_distance": 0.2087777898135237,
+      "high_distance": 0.3743813286187687
+    }
+  ],
+  "macro_st_rae": {
+    "baseline": 0.770834790558105,
+    "frozen_head": 0.7778049606181326,
+    "partial_tune": 0.7970101687659632
+  },
+  "best_epochs": [
+    {
+      "split": "scaffold_73",
+      "model": "frozen_head",
+      "best_epoch": 8
+    },
+    {
+      "split": "scaffold_73",
+      "model": "partial_tune",
+      "best_epoch": 8
+    },
+    {
+      "split": "scaffold_74",
+      "model": "frozen_head",
+      "best_epoch": 4
+    },
+    {
+      "split": "scaffold_74",
+      "model": "partial_tune",
+      "best_epoch": 8
+    },
+    {
+      "split": "analog_expansion",
+      "model": "frozen_head",
+      "best_epoch": 4
+    },
+    {
+      "split": "analog_expansion",
+      "model": "partial_tune",
+      "best_epoch": 4
+    }
+  ],
+  "max_reconciliation_error": 1.1102230246251565e-16,
+  "exclusion_and_hash_checks_passed": true,
+  "confirmation_opened": false,
+  "blind_csv_exists": false,
+  "artifacts_sha256": {
+    "analog_expansion-frozen_head-trace.json": "05c9fd8a017d02d7c6215a98ce10e0e98f5418a2475cab2c30534b53b5d9da57",
+    "analog_expansion-partial_tune-trace.json": "ba2436cb45bff77ca3a693031f9d91777560028d26531b4b633b554e7f3ee143",
+    "analog_expansion-predictions.csv": "404e7970b252254a7ccf47f80bf0ce8a32316028cfefe9a22e825882ad636721",
+    "development-validation.csv": "bf95305996faaead699a30aa6ff580e02ca7d0576d5d6d5d6932131781c5b441",
+    "protocol.json": "d50310e44408987034e6ef3460da0b2a585eb80473678535462fed4ed291c536",
+    "report.json": "4be65cced0a2bd1792cfa64de47215a82cb178fb7eadce9ca9d07122b0854481",
+    "scaffold_73-frozen_head-trace.json": "ae72ddf82452e8889d5ba1dd9590c48fb16079068e55ced4682bf9f8ec612e95",
+    "scaffold_73-partial_tune-trace.json": "2369d7482db3c2223834ad2d553575ec68c0c36c4f7d4460b82f1282db158638",
+    "scaffold_73-predictions.csv": "3969a8e67c73b026e39358e3a3d04216df51bb71135e989fcfa63286c923f9df",
+    "scaffold_74-frozen_head-trace.json": "d13b8134878599b4c467b63245db1a34a94e7bff4dd3252d0c4a587398bd3fac",
+    "scaffold_74-partial_tune-trace.json": "4078af6601b0c93878bd130c4eaece7dbebc3d44c82a63fd3d577ff854a642d7",
+    "scaffold_74-predictions.csv": "dabbd8cbcb5af537b38e573a25038004a97041401cd08b1d18036f85d34679cc",
+    "selection.json": "d200b0b4cb84db07fb5c11f46e1a855ab993f1c6eb45e57ecdc3b612a2151a78",
+    "training-trace.json": "b1283081986511a0219aeb52be0471792e2b74ab94f444474593d6174020ac36"
+  }
+}

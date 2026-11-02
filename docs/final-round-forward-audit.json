@@ -1,0 +1,12 @@
+{
+  "molecules": 3,
+  "label_usage": "none; forward-only parity check",
+  "max_abs_embedding_error": 0.0,
+  "partial_encoder_trainable_parameters": {
+    "W_o.weight": 4341760,
+    "W_o.bias": 2048
+  },
+  "frozen_encoder_trainable_parameters": 0,
+  "head_trainable_parameters": 131396,
+  "source_sha256": "da95291c960c968fb25c96b4148d4edc946aae93ec881688da30d92ee87a2bca"
+}

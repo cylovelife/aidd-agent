@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-11-02T02:06:46.230125+00:00",
+  "latest_effective_entry": {
+    "rank": 214,
+    "leaderboard_entries": 267,
+    "ma_st_rae": 0.920131143142261,
+    "submitted": "2026-10-29 03:45 UTC",
+    "alias": "aidd-agent",
+    "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+    "leaderboard_scope": "live public regression leaderboard, not final ranking"
+  },
+  "public_leaderboard_sha256": "9caea6360f23bc743a864defc58f2120631472a68ba0b7f45808048ba5222be4",
+  "prediction_sha256": "f6b1987532b0d2469e5527f8702d6017f04dc5a65c32cebd6c4f16d50fc49b28",
+  "receipt_prediction_hash_match": true,
+  "alias_entries": 1,
+  "known_scored_submissions": [
+    {
+      "round": 1,
+      "ma_st_rae": 0.9284982814029326
+    },
+    {
+      "round": 2,
+      "ma_st_rae": 0.920131143142261
+    }
+  ],
+  "latest_matches_best_known_score": true,
+  "method_url": "https://github.com/cylovelife/aidd-agent/blob/01b451df45e915c28b70a065e676f38ff9b15767/docs/method-report-round2.md",
+  "scope": "Known project submissions and live public leaderboard; not final hidden score or global optimality",
+  "live_rules": {
+    "checked_at": "2026-11-02T01:57:32.358070+00:00",
+    "source": "https://openadmet-cyp-challenge.hf.space/config",
+    "response_sha256": "798b82005e0daf04c328236c42fe50f07c706ef46ffb5d59552a624ab2b4d3a5",
+    "max_submissions_per_12_hours": 1,
+    "scoring_entry": "latest valid submission",
+    "deadline_utc": "2026-11-03T23:59:00+00:00"
+  },
+  "local_validator": {
+    "valid": true,
+    "errors": []
+  },
+  "final_round_decision": {
+    "development_pass": false,
+    "submission_eligible": false,
+    "new_platform_submission": false,
+    "effective_entry_preserved": true,
+    "reason": "Predeclared development gate failed; no confirmation evaluation or new blind predictions"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "failed_run": "state/runs/20261102-final-neural-01",
+  "failure": "FileExistsError writing repeated exclusive training-trace.json",
+  "failed_source_sha256": "c658e6523ecf589defd874cde5992dc776a2837e52f45015beaf6a4b26604030",
+  "failed_source_snapshot": "state/sources/final-round/failed-attempt-source.py",
+  "failed_log_sha256": "86425b9f255ab0d999158964463d65c80c7013e717338689c9c16a4dac35d450",
+  "development_metrics_written": false,
+  "confirmation_opened": false,
+  "recovery": "Per-split/per-candidate exclusive trace files; aggregate once after all splits",
+  "replacement_run": "state/runs/20261102-final-neural-02",
+  "candidate_hyperparameters_or_gates_changed": false,
+  "completed_first_candidate_trace_identical_after_recovery": true
+}
