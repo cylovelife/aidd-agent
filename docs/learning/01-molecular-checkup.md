@@ -2,7 +2,7 @@
 
 目标：能解释「字符串、分子图、描述符、指纹」四者的关系。工程已实际运行；
 个人学习验收等待你自己的解释与修改，不能由程序通过代替。
-任务与后续ESOL验收见[学习计划](../learning-plan.md)。
+任务与后续ESOL验收见[学习计划](plan.md)。
 
 ## 先预测，再运行
 
@@ -11,7 +11,7 @@
 
 ```bash
 uv sync --frozen
-uv run python scripts/run_molecular_checkup.py \
+uv run aidd-checkup \
   --smiles CCO OCC COC --output state/learning/my-first-checkup
 ```
 
@@ -25,7 +25,7 @@ report.json记录版本、输入/源码和产物哈希。输出目录必须不�
 
 ```python
 from rdkit import Chem
-from aidd_agent.molecular_checkup import describe_smiles
+from aidd_agent.adapters.rdkit.molecules import describe_smiles
 
 mol = Chem.MolFromSmiles("CCO")
 assert mol is not None
@@ -77,9 +77,9 @@ MolWt是原子量加和的平均摩尔质量；它不能区分这一对异构体
 运行同一批示例，只改一个条件：
 
 ```bash
-uv run python scripts/run_molecular_checkup.py \
+uv run aidd-checkup \
   --output state/learning/my-example-plain
-uv run python scripts/run_molecular_checkup.py --chirality \
+uv run aidd-checkup --chirality \
   --output state/learning/my-example-chiral
 ```
 
@@ -113,7 +113,7 @@ Morgan指纹用原子局部邻域编码结构；本工具固定radius2和2048bit
 也不因示例已跑通而将学习验收勾选为完成。下一课将追踪指纹和近邻代码，再进入
 ESOL的logS、数据审计与验证划分。
 
-实现入口：[结构与描述符](../../src/aidd_agent/molecular_checkup.py)、
-[运行脚本](../../scripts/run_molecular_checkup.py)、[示例](../../examples/learning/molecules.json)。
+实现入口：[结构与描述符](../../src/aidd_agent/adapters/rdkit/molecules.py)、
+[命令装配](../../src/aidd_agent/entrypoints/checkup.py)、[示例](../../examples/learning/molecules.json)。
 原理参考：[RDKit官方入门](https://www.rdkit.org/docs/GettingStartedInPython.html)。
 本课运行与验证摘要见[工程记录](01-verification.md)。

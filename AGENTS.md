@@ -5,9 +5,9 @@
 - Independent personal AIDD competition project. First task: OpenADMET CYP Direct Inhibition regression; execution order and actual status live in `docs/competition-plan.md`.
 - Official source links and audited participation/submission constraints live in `docs/cyp-rules.md`. Pin dataset and tutorial revisions in each run; recheck rules before external submission.
 - `pyproject.toml` and `uv.lock` define the Python environment; implementation uses `src/aidd_agent/`, tests use `tests/`. No dependency on quant-agent code, data or accounts.
-- The post-competition learning route lives in `docs/learning-plan.md`. The independent molecular checkup entry is `scripts/run_molecular_checkup.py`; lessons and engineering/learner acceptance are separate under `docs/learning/`. Preserve all CYP artifacts and protocols; learning work does not reopen competition fitting or submissions. ESOL fitting requires the source/split/resource lock described in the learning plan.
+- The post-competition learning route lives in `docs/learning/plan.md`. The canonical checkup command is `aidd-checkup`; `scripts/run_molecular_checkup.py` and `aidd_agent.molecular_checkup` remain compatibility entries. Lessons and engineering/learner acceptance are separate under `docs/learning/`. Preserve all CYP artifacts and protocols; learning work does not reopen competition fitting or submissions. ESOL fitting requires the source/split/resource lock described in the learning plan.
 
-## Research invariants
+## CYP research invariants
 
 - Raw downloads are immutable, hashed and stored under ignored `state/`; never infer missing labels as zero or use test labels/leaderboard feedback for model selection.
 - The first run uses only official public training data. Choose split, finite candidate budget and metrics before fitting. Keep identical molecules together; report local validation separately from official blind scores.
@@ -17,6 +17,9 @@
 - Use one real Hugging Face account for the team. Respect the 12-hour submission limit and disclose proprietary data/open-source status accurately.
 
 ## Verification and recovery
+
+- Architecture cleanup is authorized in `docs/engineering/architecture-plan.md`. Evolving code follows `entrypoints -> application -> domain`; RDKit/report I/O belongs to adapters, injected at entrypoints. Existing flat CYP modules and root protocol documents form a frozen compatibility area because their bytes/paths participate in provenance checks. New application/domain code must not depend on that area. Engineering and learner acceptance remain separate.
+- `docs/README.md` is the documentation entry; `docs/engineering/architecture.md` defines boundaries. `tests/test_architecture.py` enforces inward imports and `docs/engineering/cyp-preservation.json` preserves original and byte-exact relocated CYP files. Tests are grouped under domain/application/integration/experiments/cyp. New chemistry or ESOL behavior belongs to the layered packages, not the compatibility facade.
 
 - Verified commands: `uv sync --frozen`, `uv run pytest`, `uv run ruff check .`, `uv run ruff format --check .`, `uv run mypy src/aidd_agent`. The optional submission SDK uses `uv sync --frozen --group submission`.
 - Optional CPU neural experiments use `uv sync --frozen --group neural` and `uv run --group neural pytest`; ordinary commands do not require PyTorch. Auxiliary-transfer protocols and evaluated outcomes live in `docs/round3-plan.md`, `docs/round3b-plan.md`, and `docs/round3-results.md`.

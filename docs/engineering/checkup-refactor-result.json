@@ -1,0 +1,34 @@
+{
+  "20261102-architecture-plain-01": {
+    "previous_run": "20261102-checkup-02",
+    "records_equal": true,
+    "records": 20,
+    "schema_version": 2,
+    "input_sha256": "898bab6c0bdb4e0a69dc3c1cbc68d20c59e52a921c942d2458989d041e8bbb26",
+    "source_files_sha256": {
+      "aidd_agent/entrypoints/checkup.py": "e03e015fa79bf3ebe1f2180e5a4b63de2ede7467339a40cda0f757df525bada4",
+      "aidd_agent/application/checkup.py": "8cfd57e51941dfe00569fda32e51aee31562fd5bce5de35a0424a150a3518e74",
+      "aidd_agent/domain/molecules.py": "86adf30b43d221154cb0b4e0cd140879e93d02f9ea37c3b2d733dce309b41478",
+      "aidd_agent/adapters/rdkit/molecules.py": "e68af51fc2769687ede75871b9c13091d2c01590abfd61dbf4196fc59033ca70",
+      "aidd_agent/adapters/reports/checkup.py": "f02a3bfb134588c82d30edec331a86898238aad5f1798fba8b0739a95e8d708f"
+    },
+    "molecules_sha256": "98eb0abff0ede18177d0c4862621bb08c4edee51420e5554234fec4a32a258c8",
+    "png_byte_equal": true
+  },
+  "20261102-architecture-chiral-01": {
+    "previous_run": "20261102-checkup-chiral-02",
+    "records_equal": true,
+    "records": 20,
+    "schema_version": 2,
+    "input_sha256": "898bab6c0bdb4e0a69dc3c1cbc68d20c59e52a921c942d2458989d041e8bbb26",
+    "source_files_sha256": {
+      "aidd_agent/entrypoints/checkup.py": "e03e015fa79bf3ebe1f2180e5a4b63de2ede7467339a40cda0f757df525bada4",
+      "aidd_agent/application/checkup.py": "8cfd57e51941dfe00569fda32e51aee31562fd5bce5de35a0424a150a3518e74",
+      "aidd_agent/domain/molecules.py": "86adf30b43d221154cb0b4e0cd140879e93d02f9ea37c3b2d733dce309b41478",
+      "aidd_agent/adapters/rdkit/molecules.py": "e68af51fc2769687ede75871b9c13091d2c01590abfd61dbf4196fc59033ca70",
+      "aidd_agent/adapters/reports/checkup.py": "f02a3bfb134588c82d30edec331a86898238aad5f1798fba8b0739a95e8d708f"
+    },
+    "molecules_sha256": "41b27d636ab12235d0b543560577c7e8fbc1e5adc09652846f021cc097295c76",
+    "png_byte_equal": true
+  }
+}

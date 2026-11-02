@@ -1,0 +1,12 @@
+{
+  "wheel_sha256": "25d8a69714693372b6d33d6294a1f20ab9353c34d31ac595ce56f5dcb4fd451b",
+  "locked_base_dependencies_installed": true,
+  "isolated_venv": true,
+  "outside_repository": true,
+  "package_path_inside_venv": true,
+  "inner_import_without_rdkit_or_torch": true,
+  "installed_checkup_command_valid_count": 3,
+  "legacy_cyp_cli_help_passed": true,
+  "training_or_submission": false,
+  "offline_attempt": "Unavailable registry cache; retried normal locked install"
+}

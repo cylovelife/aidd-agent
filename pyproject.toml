@@ -29,6 +29,7 @@ submission = ["gradio-client>=1.8,<3"]
 
 [project.scripts]
 aidd = "aidd_agent.cli:main"
+aidd-checkup = "aidd_agent.entrypoints.checkup:main"
 
 [tool.ruff]
 target-version = "py312"
